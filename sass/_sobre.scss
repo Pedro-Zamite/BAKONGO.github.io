@@ -1,10 +1,10 @@
 // Inicio da section sobre
-section#sobre{
+#sobre{
     text-transform: uppercase;
     display: inline-block;
     text-align: center;
-    margin: 40px 0;
-    height: 400px;
+    margin: 20px 0;
+    height: 800px;
     width: 100%;
     
     h2 {
@@ -29,20 +29,21 @@ section#sobre{
         padding: 0 10%; 
         align-items: center;
         justify-content: center;
-        flex-flow: wrap row;
-        height: 100%;
-        width: 100%;
+        height: 50%;
+        width:100%;
         #sobreNos {
+            display:block;
             align-items: center;
             justify-content: center;
-            display:inline-flex;
-            padding: 20px;
-            height: 50%;
+            padding:40px 20px 20px 20px;
+            height: 90%;
             width: 50%;
 
             p {
                 text-transform: capitalize;
+                line-height: 1.5;
                 text-align: justify;
+                font-size: 20px;
                 color: $cinza;
             }
         }
@@ -64,6 +65,46 @@ section#sobre{
                 background-color: $pretoTrans;
                 transition: .5s all;
             }
+        }
+    }
+
+    // Aqui esta a formatação da section saber mais
+    #saberMais {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        padding: 0 10%;
+        width: 100%;
+        height:35%;
+        gap: 20px;
+        .card {
+            height: 100%;
+            width: 420px;
+            padding: 10px;
+            cursor: pointer;
+            background-color: $cinza-claro;
+
+            h3 {
+                margin: 20px auto;
+                font-size: 25px;
+                color: $cinza;
+            }
+
+            #descricaoMissao{
+                display: flex;
+                margin-top: 50px;
+                align-items: center;
+                justify-content: center;
+                p{
+                    text-transform:capitalize;
+                    text-align: center;
+                    line-height: 1.5;
+                    font-size: 18px;
+                }
+            }
+           
+           
         }
     }
 }

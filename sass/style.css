@@ -3,6 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7.2em;
 }
 
 body {
@@ -146,50 +148,51 @@ body {
   width: 100%;
 }
 
-section#sobre {
+#sobre {
   text-transform: uppercase;
   display: inline-block;
   text-align: center;
-  margin: 40px 0;
-  height: 400px;
+  margin: 20px 0;
+  height: 800px;
   width: 100%;
 }
-section#sobre h2 {
+#sobre h2 {
   font-size: calc(14px + 1vw);
   color: #025;
   margin-bottom: 20px;
   text-align: center;
 }
-section#sobre #hr hr {
+#sobre #hr hr {
   margin: 0 auto;
   padding: 2px;
   width: 150px;
   margin-bottom: 40px;
   background-color: #025;
 }
-section#sobre #sobre-decrition {
+#sobre #sobre-decrition {
   display: flex;
   padding: 0 10%;
   align-items: center;
   justify-content: center;
-  flex-flow: wrap row;
-  height: 100%;
+  height: 50%;
   width: 100%;
 }
-section#sobre #sobre-decrition #sobreNos {
+#sobre #sobre-decrition #sobreNos {
+  display: block;
   align-items: center;
   justify-content: center;
-  display: inline-flex;
-  padding: 20px;
-  height: 50%;
+  padding: 40px 20px 20px 20px;
+  height: 90%;
   width: 50%;
 }
-section#sobre #sobre-decrition #sobreNos p {
+#sobre #sobre-decrition #sobreNos p {
   text-transform: capitalize;
+  line-height: 1.5;
   text-align: justify;
+  font-size: 20px;
   color: rgb(87, 87, 87);
 }
-section#sobre #sobre-decrition #Img-sobre {
+#sobre #sobre-decrition #Img-sobre {
   width: 50%;
   height: 90%;
   background: url("../imagens/father-and-son-2258681_1280.jpg");
@@ -199,7 +202,7 @@ section#sobre #sobre-decrition #Img-sobre {
   background-position-x: 300px;
   background-size: cover;
 }
-section#sobre #sobre-decrition #Img-sobre:hover #sobreOpac {
+#sobre #sobre-decrition #Img-sobre:hover #sobreOpac {
   width: 100%;
   height: 100%;
   cursor: pointer;
@@ -207,10 +210,44 @@ section#sobre #sobre-decrition #Img-sobre:hover #sobreOpac {
   background-color: rgba(0, 0, 0, 0.6117647059);
   transition: 0.5s all;
 }
+#sobre #saberMais {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  padding: 0 10%;
+  width: 100%;
+  height: 35%;
+  gap: 20px;
+}
+#sobre #saberMais .card {
+  height: 100%;
+  width: 420px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #eee;
+}
+#sobre #saberMais .card h3 {
+  margin: 20px auto;
+  font-size: 25px;
+  color: rgb(87, 87, 87);
+}
+#sobre #saberMais .card #descricaoMissao {
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+}
+#sobre #saberMais .card #descricaoMissao p {
+  text-transform: capitalize;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 18px;
+}
 
 #servicos {
-  margin-top: 40px;
   height: 700px;
+  margin-top: 30px;
 }
 #servicos h2 {
   font-size: calc(14px + 1vw);
@@ -218,7 +255,6 @@ section#sobre #sobre-decrition #Img-sobre:hover #sobreOpac {
   color: #025;
   margin-bottom: 20px;
   text-align: center;
-  margin-top: 70px;
 }
 #servicos #hr hr {
   margin: 0 auto;

@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7.20em;
 }
 @import'./cores';
 @import'./navbar';
@@ -11,3 +13,4 @@
 @import'../sass/projecto';
 @import'../sass/newsLetter';
 @import'../sass/footer';
+
