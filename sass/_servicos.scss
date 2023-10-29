@@ -2,6 +2,7 @@
 #servicos {
     height: 700px;
     margin-top: 30px;
+    position: relative;
     h2 {
         font-size: calc(14px + 1vw);
         text-transform: uppercase;
@@ -27,6 +28,71 @@
         text-align: center;
         font-size: calc(5px + 1vw);
     }
+
+    // Inicio da formatação do modal da section serviços
+            .modal {
+                display: none;
+            }
+         .modal.active{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color:$pretoTrans;
+                position: absolute;
+                cursor: pointer;
+                height: 700px;
+                width: 100%;
+                top: -20px;
+                z-index: 2;
+                #modal{
+                    background-color: $branco;
+                    cursor: pointer;
+                    height: 100%;
+                    width: 50%;
+                }
+            }
+            .modal2 {
+                display: none;
+            }
+         .modal2.active{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color:$pretoTrans;
+                position: absolute;
+                cursor: pointer;
+                height: 700px;
+                width: 100%;
+                top: -20px;
+                z-index: 2;
+                #modal2{
+                    background-color: $branco;
+                    cursor: pointer;
+                    height: 100%;
+                    width: 50%;
+                }
+            }
+            .modal3 {
+                display: none;
+            }
+         .modal3.active{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color:$pretoTrans;
+                position: absolute;
+                cursor: pointer;
+                height: 700px;
+                width: 100%;
+                top: -20px;
+                z-index: 2;
+                #modal3{
+                    background-color: $branco;
+                    cursor: pointer;
+                    height: 100%;
+                    width: 50%;
+                }
+            }
     // Aqui vai a formatação dos cards da section sobre
     #cards {
         display: flex;
@@ -40,6 +106,7 @@
         .card {
             width: 420px;
             height: 500px;
+            // position: relative;
             background-color: $cinza-claro;
         }
 
@@ -61,7 +128,7 @@
           
         }
 
-        .card:nth-of-type(1) span {
+        .card:nth-of-type(1) #spread {
             width: 40px;
             height: 40px;
             display: flex;
@@ -122,7 +189,7 @@
             }
           
         }
-        .card:nth-of-type(2) span {
+        .card:nth-of-type(2) #spread2 {
             width: 40px;
             height: 40px;
             display: flex;
@@ -182,7 +249,7 @@
             }
           
         }
-        .card:nth-of-type(3) span {
+        .card:nth-of-type(3) #spread3 {
             width: 40px;
             height: 40px;
             display: flex;
