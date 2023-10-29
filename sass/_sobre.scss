@@ -1,0 +1,69 @@
+// Inicio da section sobre
+section#sobre{
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    margin: 40px 0;
+    height: 400px;
+    width: 100%;
+    
+    h2 {
+        font-size: calc(14px + 1vw);
+        color: $azuel-escuro;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    #hr {
+        hr {
+            margin: 0 auto;
+            padding: 2px;
+            width: 150px; 
+            margin-bottom: 40px;
+            background-color: $azuel-escuro;
+        }
+    }
+    // Aqui esta a formatação da section descrição
+    #sobre-decrition {
+        display: flex;
+        padding: 0 10%; 
+        align-items: center;
+        justify-content: center;
+        flex-flow: wrap row;
+        height: 100%;
+        width: 100%;
+        #sobreNos {
+            align-items: center;
+            justify-content: center;
+            display:inline-flex;
+            padding: 20px;
+            height: 50%;
+            width: 50%;
+
+            p {
+                text-transform: capitalize;
+                text-align: justify;
+                color: $cinza;
+            }
+        }
+        #Img-sobre{
+            width: 50%;
+            height: 90%;
+            background: url("../imagens/father-and-son-2258681_1280.jpg");
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-position-x: 300px;
+            background-size: cover;
+
+               &:hover #sobreOpac {
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+                background-position-x: 300px;
+                background-color: $pretoTrans;
+                transition: .5s all;
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import'./cores';
+@import'./navbar';
+@import'./header';
+@import './sobre';
+@import'../sass/servicos';
+@import'../sass/projecto';
+@import'../sass/newsLetter';
+@import'../sass/footer';

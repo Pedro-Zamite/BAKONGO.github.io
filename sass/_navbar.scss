@@ -1,0 +1,84 @@
+// formatação do mixin para posicionamento
+@mixin formatacao(){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+body{
+    scroll-behavior: smooth;
+}
+// Inicio da formação do logo
+#logo h1{
+    color: $branco;
+    user-select: none;
+    font-size: calc(15px + 1vw);
+}
+// Fim da formação do logo
+
+// Inicio da formação dos Elementos da nav
+#navbar {
+    @include formatacao();
+    z-index: 2;
+    height: 100px;
+    width: 100%;
+    padding: 0 10%;
+    position: fixed;
+    background-color:$superPretoTrans;
+
+    // Inicio da formatação do item hamburgue 
+    #hamburgue {
+        display: none
+    }
+
+        // Inicio da formatação dos itens do menu 
+    #menu {
+        @include formatacao();
+        gap: 60px;
+        // Inicio da formatação do menu-itens
+        #menu-itens{
+            @include formatacao();
+            transition: .5s all;
+            list-style: none;
+            gap: 30px;
+
+            & li a {
+                color: $branco;
+                padding-bottom: 8px;
+                text-decoration: none;
+                font-size: calc(10px + 1vw);
+            }
+            & li:hover {
+                cursor: pointer;
+                transition: .5s all;
+                padding-bottom: 8px;
+                border-bottom: 2px solid $branco;
+            }
+            
+        }
+
+        // Inicio da formatação do item contato
+            #contato {
+                list-style: none;
+                padding: 10px 15px;
+                border-radius: 5px;
+                background-color: $cinza;
+                border: 1px solid $preto;
+                transition: .5s all;
+                & li a {
+                    color: $branco;
+                    text-decoration: none;
+                    font-size: calc(10px + 1vw);
+                }
+                &:hover {
+                    cursor: pointer;
+                    transition: .5s all;
+                    background-color:$branco;
+                    box-shadow: 2px 2px 8px $brancoTrans;
+                    & li a {
+                        color: $preto;
+                    }
+                }
+            }  
+    }
+}
+// Inicio da formação dos Elementos da nav

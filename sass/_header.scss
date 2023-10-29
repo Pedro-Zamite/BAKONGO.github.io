@@ -1,0 +1,78 @@
+// Inicio da section header
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 850px;
+    width: 100%;
+
+// Aqui esta a formatação da opacidade das descrições e dos botões das descrições
+    #opac {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $pretoTrans;
+        position: absolute;
+        padding: 0 10%;
+        height: 100%;
+        width: 100%;
+
+        #descricao {
+            line-height: -15%;
+
+            h1 {
+                color: $branco;
+                font-weight: 900;
+                text-align: center;
+                font-size: calc(60px + 1vw);
+                margin: 40px 0;
+            }
+
+            p {
+                color: $cinza;
+                padding: 0 50px;
+                text-align: center;
+                margin-bottom: 70px;
+                font-size: calc(12px + 1vw);
+            }
+
+            #botao {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+
+                .button {
+                    border: 1px solid $preto;
+        
+                    padding: 20px 40px;
+                    border-radius: 5px;
+                    cursor: pointer;
+
+                    a {
+                        text-decoration: none;
+                        font-size: 20px;
+                        color: $preto;
+                    }
+                  &:nth-of-type(1) {
+                        background-color: $azul-t-chert;
+                        a {
+                            color: #fff;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+// Aqui esta a formatação das imagens
+    #imge-slide {
+        background: url("../imagens/istockphoto-1310627676-612x612.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+    }
+}

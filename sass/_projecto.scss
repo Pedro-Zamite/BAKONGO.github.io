@@ -1,0 +1,162 @@
+// Inicio da formatação da section Minha equipa
+#projecto {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    height: 850px;
+    width: 100%;
+
+    h2 {
+        font-size: calc(14px + 1vw);
+        text-transform: uppercase;
+        color: $azuel-escuro;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    #hr {
+        hr {
+            margin: 0 auto;
+            padding: 2px;
+            width: 150px; 
+            margin-bottom: 40px;
+            background-color: $azuel-escuro;
+        }
+    }
+
+    #pp {
+        padding: 0 10%;
+        text-align: center;
+        p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+    }
+
+    // Aqui esta a formatação dos cards Horizontal da section serviços
+    #cardsH {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $cinza;
+        flex-flow: wrap row;
+        padding: 20px 0;
+        margin: 20px 0;
+        width: 100%;
+        gap: 20px;
+// Aqui esta á formatação dos cards
+        .card {
+            display: flex;
+            align-items: center;
+            background-color: $cinza-claro;
+            height: 300px;
+            width: 40%;
+
+            
+          &:nth-of-type(1)  #foto{
+            width: 40%;
+            height: 100%;
+            background: url("../imagens/cardsHorizontal/MONITOR\ PORTATIL\ ASUS\ LED\ 15.6.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            }
+            &:nth-of-type(1) #descrição{
+            width: 60%;
+            height: 100%;
+            padding: 0 10px;
+            padding-top: 50px;
+            justify-content: center;
+            align-items: center;
+            display: block;
+            h3 {
+                left: 0;
+                margin:20px 0;
+                font-weight: 900;
+                font-size: calc(15px + 1vw);
+            }
+
+            p {
+                text-align: justify;
+            }
+            }
+          &:nth-of-type(2)  #foto{
+            width: 40%;
+            height: 100%;
+            background: url("../imagens/cardsHorizontal/PC\ ITX\ GAMER\ ARENA\ SETUP\ AMD\ ATHLON\ 3000G\ RX\ 550\ 4GB\ 8GB\ RAM\ SSD\ 240GB.webp");
+            background-position-x: -40px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            }
+            &:nth-of-type(2) #descrição{
+            width: 60%;
+            height: 100%;
+            padding: 0 10px;
+            padding-top: 50px;
+            justify-content: center;
+            align-items: center;
+            display: block;
+            h3 {
+                left: 0;
+                margin:20px 0;
+                font-weight: 900;
+                font-size: calc(15px + 1vw);
+            }
+
+            p {
+                text-align: justify;
+            }
+            }
+          &:nth-of-type(3)  #foto{
+            width: 40%;
+            height: 100%;
+            background: url("../imagens/cardsHorizontal/pngegg\ \(2\).png");
+            background-color: $branco;
+            background-repeat: no-repeat;
+            background-size: cover;
+            }
+            &:nth-of-type(3) #descrição{
+            width: 60%;
+            height: 100%;
+            padding: 0 10px;
+            padding-top: 50px;
+            justify-content: center;
+            align-items: center;
+            display: block;
+            h3 {
+                left: 0;
+                margin:20px 0;
+                font-weight: 900;
+                font-size: calc(15px + 1vw);
+            }
+
+            p {
+                text-align: justify;
+            }
+            }
+          &:nth-of-type(4)  #foto{
+            width: 40%;
+            height: 100%;
+            background: url("../imagens/cardsHorizontal/qu1ifprsvfarhmp2atdr89u9qjfofaolcjzq_620x620+fill_ffffff.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            }
+            &:nth-of-type(4) #descrição{
+            width: 60%;
+            height: 100%;
+            padding: 0 10px;
+            padding-top: 50px;
+            justify-content: center;
+            align-items: center;
+            display: block;
+            h3 {
+                left: 0;
+                margin:20px 0;
+                font-weight: 900;
+                font-size: calc(15px + 1vw);
+            }
+
+            p {
+                text-align: justify;
+            }
+            }
+        }
+    }
+}
