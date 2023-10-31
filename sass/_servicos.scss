@@ -23,9 +23,10 @@
 
     #p {
         margin-top:40px; 
-        margin-bottom: 70px;
         font-weight: 500;
         text-align: center;
+        margin-bottom: 70px;
+        padding:0 10%;
         font-size: calc(5px + 1vw);
     }
 
@@ -39,59 +40,170 @@
                 justify-content: center;
                 background-color:$pretoTrans;
                 position: absolute;
+                padding: 40px 0;
                 cursor: pointer;
-                height: 700px;
+                height: 750px;
                 width: 100%;
                 top: -20px;
-                z-index: 2;
+                z-index: 1;
                 #modal{
-                    background-color: $branco;
+                    background-color: $branco; 
+                    overflow: scroll;                  
                     cursor: pointer;
+                    padding: 10px;
                     height: 100%;
                     width: 50%;
+
+                    h3 {
+                        margin: 40px auto;
+                        font-size: 28px;
+                        color: $cinza;
+                    }
+                    p {
+                    text-align: justify;
+                    font-size: 20px;
+                    color: $cinza;
+                    }
+                    #obs {
+                        text-align: justify;
+                        font-size: 20px;
+                        color: $cinza; 
+                    }
+                    #bodyServico {
+                        border: 2px solid $cinza;
+                        width: 100%;
+                        height: 90%;
+                        .detalheModal{
+                            padding: 5px 10px;
+                            h3 {
+                                margin: 10px auto;
+                                font-size: 25px;
+                                color: $cinza;
+                            }
+                            p {
+                                text-align: justify;
+                                font-size: 20px;
+                                color: $cinza;
+                                }
+                        }
+                    }
                 }
             }
             .modal2 {
                 display: none;
             }
          .modal2.active{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background-color:$pretoTrans;
-                position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color:$pretoTrans;
+            position: absolute;
+            padding: 40px 0;
+            cursor: pointer;
+            height: 750px;
+            width: 100%;
+            top: -20px;
+            z-index: 1;
+            #modal2{
+                background-color: $branco; 
+                overflow: scroll;                  
                 cursor: pointer;
-                height: 700px;
-                width: 100%;
-                top: -20px;
-                z-index: 2;
-                #modal2{
-                    background-color: $branco;
-                    cursor: pointer;
-                    height: 100%;
-                    width: 50%;
+                padding: 10px;
+                height: 100%;
+                width: 50%;
+
+                h3 {
+                    margin: 40px auto;
+                    font-size: 28px;
+                    color: $cinza;
                 }
+                p {
+                text-align: justify;
+                font-size: 20px;
+                color: $cinza;
+                }
+                #obs {
+                    text-align: justify;
+                    font-size: 20px;
+                    color: $cinza; 
+                }
+                #bodyServico {
+                    border: 2px solid $cinza;
+                    width: 100%;
+                    height: 150%;
+                    .detalheModal{
+                        padding: 5px 10px;
+                        h3 {
+                            margin: 10px auto;
+                            font-size: 25px;
+                            color: $cinza;
+                        }
+                        p {
+                            text-align: justify;
+                            font-size: 20px;
+                            color: $cinza;
+                            }
+                    }
+                }
+            }
             }
             .modal3 {
                 display: none;
             }
          .modal3.active{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background-color:$pretoTrans;
-                position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color:$pretoTrans;
+            position: absolute;
+            padding: 40px 0;
+            cursor: pointer;
+            height: 750px;
+            width: 100%;
+            top: -20px;
+            z-index: 1;
+            #modal3{
+                background-color: $branco; 
+                overflow: scroll;                  
                 cursor: pointer;
-                height: 700px;
-                width: 100%;
-                top: -20px;
-                z-index: 2;
-                #modal3{
-                    background-color: $branco;
-                    cursor: pointer;
-                    height: 100%;
-                    width: 50%;
+                padding: 10px;
+                height: 100%;
+                width: 50%;
+
+                h3 {
+                    margin: 40px auto;
+                    font-size: 28px;
+                    color: $cinza;
                 }
+                p {
+                text-align: justify;
+                font-size: 20px;
+                color: $cinza;
+                }
+                #obs {
+                    text-align: justify;
+                    font-size: 20px;
+                    color: $cinza; 
+                }
+                #bodyServico {
+                    border: 2px solid $cinza;
+                    width: 100%;
+                    height: 100%;
+                    .detalheModal{
+                        padding: 5px 10px;
+                        h3 {
+                            margin: 10px auto;
+                            font-size: 25px;
+                            color: $cinza;
+                        }
+                        p {
+                            text-align: justify;
+                            font-size: 20px;
+                            color: $cinza;
+                            }
+                    }
+                }
+            }
             }
     // Aqui vai a formatação dos cards da section sobre
     #cards {
@@ -106,7 +218,6 @@
         .card {
             width: 420px;
             height: 500px;
-            // position: relative;
             background-color: $cinza-claro;
         }
 
@@ -169,6 +280,8 @@
 
             p {
                 text-align: justify;
+                font-size: 18px;
+                color: $cinza;
             }
         }
 
@@ -229,6 +342,8 @@
 
             p {
                 text-align: justify;
+                font-size: 18px;
+                color: $cinza;
             }
         }
 
@@ -289,6 +404,8 @@
 
             p {
                 text-align: justify;
+                font-size: 18px;
+                color: $cinza;
             }
         }
 

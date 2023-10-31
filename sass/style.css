@@ -243,6 +243,7 @@ body {
   text-align: center;
   line-height: 1.5;
   font-size: 18px;
+  color: rgb(87, 87, 87);
 }
 
 #servicos {
@@ -266,9 +267,10 @@ body {
 }
 #servicos #p {
   margin-top: 40px;
-  margin-bottom: 70px;
   font-weight: 500;
   text-align: center;
+  margin-bottom: 70px;
+  padding: 0 10%;
   font-size: calc(5px + 1vw);
 }
 #servicos .modal {
@@ -280,17 +282,53 @@ body {
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.6117647059);
   position: absolute;
+  padding: 40px 0;
   cursor: pointer;
-  height: 700px;
+  height: 750px;
   width: 100%;
   top: -20px;
-  z-index: 2;
+  z-index: 1;
 }
 #servicos .modal.active #modal {
   background-color: #fff;
+  overflow: scroll;
   cursor: pointer;
+  padding: 10px;
   height: 100%;
   width: 50%;
+}
+#servicos .modal.active #modal h3 {
+  margin: 40px auto;
+  font-size: 28px;
+  color: rgb(87, 87, 87);
+}
+#servicos .modal.active #modal p {
+  text-align: justify;
+  font-size: 20px;
+  color: rgb(87, 87, 87);
+}
+#servicos .modal.active #modal #obs {
+  text-align: justify;
+  font-size: 20px;
+  color: rgb(87, 87, 87);
+}
+#servicos .modal.active #modal #bodyServico {
+  border: 2px solid rgb(87, 87, 87);
+  width: 100%;
+  height: 90%;
+}
+#servicos .modal.active #modal #bodyServico .detalheModal {
+  padding: 5px 10px;
+}
+#servicos .modal.active #modal #bodyServico .detalheModal h3 {
+  margin: 10px auto;
+  font-size: 25px;
+  color: rgb(87, 87, 87);
+}
+#servicos .modal.active #modal #bodyServico .detalheModal p {
+  text-align: justify;
+  font-size: 20px;
+  color: rgb(87, 87, 87);
 }
 #servicos .modal2 {
   display: none;
@@ -301,17 +339,53 @@ body {
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.6117647059);
   position: absolute;
+  padding: 40px 0;
   cursor: pointer;
-  height: 700px;
+  height: 750px;
   width: 100%;
   top: -20px;
-  z-index: 2;
+  z-index: 1;
 }
 #servicos .modal2.active #modal2 {
   background-color: #fff;
+  overflow: scroll;
   cursor: pointer;
+  padding: 10px;
   height: 100%;
   width: 50%;
+}
+#servicos .modal2.active #modal2 h3 {
+  margin: 40px auto;
+  font-size: 28px;
+  color: rgb(87, 87, 87);
+}
+#servicos .modal2.active #modal2 p {
+  text-align: justify;
+  font-size: 20px;
+  color: rgb(87, 87, 87);
+}
+#servicos .modal2.active #modal2 #obs {
+  text-align: justify;
+  font-size: 20px;
+  color: rgb(87, 87, 87);
+}
+#servicos .modal2.active #modal2 #bodyServico {
+  border: 2px solid rgb(87, 87, 87);
+  width: 100%;
+  height: 150%;
+}
+#servicos .modal2.active #modal2 #bodyServico .detalheModal {
+  padding: 5px 10px;
+}
+#servicos .modal2.active #modal2 #bodyServico .detalheModal h3 {
+  margin: 10px auto;
+  font-size: 25px;
+  color: rgb(87, 87, 87);
+}
+#servicos .modal2.active #modal2 #bodyServico .detalheModal p {
+  text-align: justify;
+  font-size: 20px;
+  color: rgb(87, 87, 87);
 }
 #servicos .modal3 {
   display: none;
@@ -322,17 +396,53 @@ body {
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.6117647059);
   position: absolute;
+  padding: 40px 0;
   cursor: pointer;
-  height: 700px;
+  height: 750px;
   width: 100%;
   top: -20px;
-  z-index: 2;
+  z-index: 1;
 }
 #servicos .modal3.active #modal3 {
   background-color: #fff;
+  overflow: scroll;
   cursor: pointer;
+  padding: 10px;
   height: 100%;
   width: 50%;
+}
+#servicos .modal3.active #modal3 h3 {
+  margin: 40px auto;
+  font-size: 28px;
+  color: rgb(87, 87, 87);
+}
+#servicos .modal3.active #modal3 p {
+  text-align: justify;
+  font-size: 20px;
+  color: rgb(87, 87, 87);
+}
+#servicos .modal3.active #modal3 #obs {
+  text-align: justify;
+  font-size: 20px;
+  color: rgb(87, 87, 87);
+}
+#servicos .modal3.active #modal3 #bodyServico {
+  border: 2px solid rgb(87, 87, 87);
+  width: 100%;
+  height: 100%;
+}
+#servicos .modal3.active #modal3 #bodyServico .detalheModal {
+  padding: 5px 10px;
+}
+#servicos .modal3.active #modal3 #bodyServico .detalheModal h3 {
+  margin: 10px auto;
+  font-size: 25px;
+  color: rgb(87, 87, 87);
+}
+#servicos .modal3.active #modal3 #bodyServico .detalheModal p {
+  text-align: justify;
+  font-size: 20px;
+  color: rgb(87, 87, 87);
 }
 #servicos #cards {
   display: flex;
@@ -401,6 +511,8 @@ body {
 }
 #servicos #cards .card:nth-of-type(1) #descricao p {
   text-align: justify;
+  font-size: 18px;
+  color: rgb(87, 87, 87);
 }
 #servicos #cards .card:nth-of-type(2) #img {
   width: 100%;
@@ -455,6 +567,8 @@ body {
 }
 #servicos #cards .card:nth-of-type(2) #descricao p {
   text-align: justify;
+  font-size: 18px;
+  color: rgb(87, 87, 87);
 }
 #servicos #cards .card:nth-of-type(3) #img {
   width: 100%;
@@ -509,6 +623,8 @@ body {
 }
 #servicos #cards .card:nth-of-type(3) #descricao p {
   text-align: justify;
+  font-size: 18px;
+  color: rgb(87, 87, 87);
 }
 
 #projecto {
