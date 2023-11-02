@@ -7,10 +7,6 @@
   scroll-padding-top: 7.2em;
 }
 
-body {
-  scroll-behavior: smooth;
-}
-
 #logo h1 {
   color: #fff;
   -webkit-user-select: none;
@@ -19,69 +15,180 @@ body {
   font-size: calc(15px + 1vw);
 }
 
-#navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 2;
-  height: 100px;
-  width: 100%;
-  padding: 0 10%;
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.5568627451);
+@media screen and (min-width: 912px) {
+  #navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+    width: 100%;
+    height: 100px;
+    padding: 0 10%;
+    position: fixed;
+    background-color: #060606;
+  }
+  #navbar #hamburgue {
+    display: none;
+  }
+  #navbar #menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+  }
+  #navbar #menu #menu-itens {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.5s all;
+    list-style: none;
+    gap: 30px;
+  }
+  #navbar #menu #menu-itens li a {
+    color: #fff;
+    padding-bottom: 8px;
+    text-decoration: none;
+    font-size: calc(10px + 1vw);
+  }
+  #navbar #menu #menu-itens li:hover {
+    cursor: pointer;
+    transition: 0.5s all;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #fff;
+  }
+  #navbar #menu #contato {
+    list-style: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: rgb(87, 87, 87);
+    border: 1px solid #111111;
+    transition: 0.5s all;
+  }
+  #navbar #menu #contato li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: calc(10px + 1vw);
+  }
+  #navbar #menu #contato:hover {
+    cursor: pointer;
+    transition: 0.5s all;
+    background-color: #fff;
+    box-shadow: 2px 2px 8px rgba(255, 255, 255, 0.3803921569);
+  }
+  #navbar #menu #contato:hover li a {
+    color: #111111;
+  }
 }
-#navbar #hamburgue {
-  display: none;
+@media screen and (max-width: 912px) {
+  #navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 4;
+    width: 100%;
+    height: 100px;
+    padding: 0 10%;
+    position: fixed;
+    background-color: #060606;
+  }
+  #navbar #hamburgue {
+    transition: 0.5s all;
+    padding: 8px 5px;
+    cursor: pointer;
+    display: block;
+    height: 70px;
+    width: 70px;
+  }
+  #navbar #hamburgue .linha {
+    width: 100%;
+    height: 5px;
+    display: block;
+    margin: 10px auto;
+    background: #ccc;
+    transition: 0.5s all;
+    transform-origin: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  #navbar .activou .linha:nth-of-type(1) {
+    transform: rotate(-35deg) translateY(10px) translateX(-7px);
+  }
+  #navbar .activou .linha:nth-of-type(2) {
+    width: 0% !important;
+    border-color: transparent !important;
+    background: transparent !important;
+  }
+  #navbar .activou .linha:nth-of-type(3) {
+    transform: rotate(37deg) translateY(-15px) translateX(-10px);
+  }
+  #navbar #menu {
+    background-color: rgba(0, 0, 0, 0.6117647059);
+    transition: 0.5s all;
+    position: absolute;
+    margin-top: 20px;
+    display: block;
+    height: auto;
+    width: 100%;
+    right: -200%;
+    z-index: -2;
+  }
+  #navbar #menu #menu-itens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  #navbar #menu #menu-itens li {
+    list-style: none;
+    cursor: pointer;
+    color: #fff;
+    padding: 20px 0;
+    width: 100%;
+  }
+  #navbar #menu #menu-itens li:hover {
+    background-color: rgba(238, 238, 238, 0.7411764706);
+  }
+  #navbar #menu #menu-itens li:hover a {
+    padding: 20px 42%;
+    color: #111111;
+  }
+  #navbar #menu #menu-itens li a {
+    color: #fff;
+    font-size: calc(25px + 1vw);
+    text-decoration: none;
+  }
+  #navbar #menu #contato {
+    text-align: center;
+    margin: 10px auto auto auto;
+    width: 100%;
+  }
+  #navbar #menu #contato li {
+    width: 100%;
+    padding: 20px;
+    cursor: pointer;
+    list-style: none;
+    background-color: rgba(219, 21, 21, 0.927);
+    border-top: 3px solid #fff;
+  }
+  #navbar #menu #contato li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: calc(25px + 1vw);
+  }
+  #navbar #menu #contato li:hover {
+    background-color: #f00;
+  }
+  #navbar #menu #contato li:hover a {
+    width: 100%;
+    padding: 20px 35%;
+  }
+  #navbar .activeMenu {
+    right: 0% !important;
+    transition: 0.5s all;
+  }
 }
-#navbar #menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 60px;
-}
-#navbar #menu #menu-itens {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  transition: 0.5s all;
-  list-style: none;
-  gap: 30px;
-}
-#navbar #menu #menu-itens li a {
-  color: #fff;
-  padding-bottom: 8px;
-  text-decoration: none;
-  font-size: calc(10px + 1vw);
-}
-#navbar #menu #menu-itens li:hover {
-  cursor: pointer;
-  transition: 0.5s all;
-  padding-bottom: 8px;
-  border-bottom: 2px solid #fff;
-}
-#navbar #menu #contato {
-  list-style: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  background-color: rgb(87, 87, 87);
-  border: 1px solid #111111;
-  transition: 0.5s all;
-}
-#navbar #menu #contato li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: calc(10px + 1vw);
-}
-#navbar #menu #contato:hover {
-  cursor: pointer;
-  transition: 0.5s all;
-  background-color: #fff;
-  box-shadow: 2px 2px 8px rgba(255, 255, 255, 0.3803921569);
-}
-#navbar #menu #contato:hover li a {
-  color: #111111;
-}
-
 #header {
   display: flex;
   align-items: center;
@@ -315,7 +422,7 @@ body {
 #servicos .modal.active #modal #bodyServico {
   border: 2px solid rgb(87, 87, 87);
   width: 100%;
-  height: 90%;
+  height: 95%;
 }
 #servicos .modal.active #modal #bodyServico .detalheModal {
   padding: 5px 10px;
@@ -329,6 +436,22 @@ body {
   text-align: justify;
   font-size: 20px;
   color: rgb(87, 87, 87);
+}
+#servicos .modal.active #modal #bodyServico #euQuero {
+  padding: 10px 20px;
+  background-color: rgb(87, 87, 87);
+  border: 1px solid #eee;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-top: 30px;
+  cursor: pointer;
+  font-size: 19px;
+  color: #fff;
+}
+#servicos .modal.active #modal #bodyServico #euQuero:hover {
+  background-color: #fff;
+  border-color: rgb(87, 87, 87);
+  color: #111111;
 }
 #servicos .modal2 {
   display: none;
@@ -387,6 +510,22 @@ body {
   font-size: 20px;
   color: rgb(87, 87, 87);
 }
+#servicos .modal2.active #modal2 #bodyServico #euQuero2 {
+  padding: 10px 20px;
+  background-color: rgb(87, 87, 87);
+  border: 1px solid #eee;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-top: 27px;
+  cursor: pointer;
+  font-size: 19px;
+  color: #fff;
+}
+#servicos .modal2.active #modal2 #bodyServico #euQuero2:hover {
+  background-color: #fff;
+  border-color: rgb(87, 87, 87);
+  color: #111111;
+}
 #servicos .modal3 {
   display: none;
 }
@@ -443,6 +582,22 @@ body {
   text-align: justify;
   font-size: 20px;
   color: rgb(87, 87, 87);
+}
+#servicos .modal3.active #modal3 #bodyServico #euQuero3 {
+  padding: 10px 20px;
+  background-color: rgb(87, 87, 87);
+  border: 1px solid #eee;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-top: 45px;
+  cursor: pointer;
+  font-size: 19px;
+  color: #fff;
+}
+#servicos .modal3.active #modal3 #bodyServico #euQuero3:hover {
+  background-color: #fff;
+  border-color: rgb(87, 87, 87);
+  color: #111111;
 }
 #servicos #cards {
   display: flex;

@@ -3,6 +3,7 @@
     height: 700px;
     margin-top: 30px;
     position: relative;
+
     h2 {
         font-size: calc(14px + 1vw);
         text-transform: uppercase;
@@ -15,196 +16,280 @@
         hr {
             margin: 0 auto;
             padding: 2px;
-            width: 150px; 
+            width: 150px;
             margin-bottom: 40px;
             background-color: $azuel-escuro;
         }
     }
 
     #p {
-        margin-top:40px; 
+        margin-top: 40px;
         font-weight: 500;
         text-align: center;
         margin-bottom: 70px;
-        padding:0 10%;
+        padding: 0 10%;
         font-size: calc(5px + 1vw);
+
     }
 
+
     // Inicio da formatação do modal da section serviços
-            .modal {
-                display: none;
+    .modal {
+        display: none;
+    }
+
+    .modal.active {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $pretoTrans;
+        position: absolute;
+        padding: 40px 0;
+        cursor: pointer;
+        height: 750px;
+        width: 100%;
+        top: -20px;
+        z-index: 1;
+
+        #modal {
+            background-color: $branco;
+            overflow: scroll;
+            cursor: pointer;
+            padding: 10px;
+            height: 100%;
+            width: 50%;
+
+            h3 {
+                margin: 40px auto;
+                font-size: 28px;
+                color: $cinza;
             }
-         .modal.active{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background-color:$pretoTrans;
-                position: absolute;
-                padding: 40px 0;
-                cursor: pointer;
-                height: 750px;
+
+            p {
+                text-align: justify;
+                font-size: 20px;
+                color: $cinza;
+            }
+
+            #obs {
+                text-align: justify;
+                font-size: 20px;
+                color: $cinza;
+            }
+
+            #bodyServico {
+                border: 2px solid $cinza;
                 width: 100%;
-                top: -20px;
-                z-index: 1;
-                #modal{
-                    background-color: $branco; 
-                    overflow: scroll;                  
-                    cursor: pointer;
-                    padding: 10px;
-                    height: 100%;
-                    width: 50%;
+                height: 95%;
+
+                .detalheModal {
+                    padding: 5px 10px;
 
                     h3 {
-                        margin: 40px auto;
-                        font-size: 28px;
+                        margin: 10px auto;
+                        font-size: 25px;
                         color: $cinza;
                     }
+
                     p {
-                    text-align: justify;
-                    font-size: 20px;
-                    color: $cinza;
-                    }
-                    #obs {
                         text-align: justify;
                         font-size: 20px;
-                        color: $cinza; 
-                    }
-                    #bodyServico {
-                        border: 2px solid $cinza;
-                        width: 100%;
-                        height: 90%;
-                        .detalheModal{
-                            padding: 5px 10px;
-                            h3 {
-                                margin: 10px auto;
-                                font-size: 25px;
-                                color: $cinza;
-                            }
-                            p {
-                                text-align: justify;
-                                font-size: 20px;
-                                color: $cinza;
-                                }
-                        }
+                        color: $cinza;
                     }
                 }
-            }
-            .modal2 {
-                display: none;
-            }
-         .modal2.active{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color:$pretoTrans;
-            position: absolute;
-            padding: 40px 0;
-            cursor: pointer;
-            height: 750px;
-            width: 100%;
-            top: -20px;
-            z-index: 1;
-            #modal2{
-                background-color: $branco; 
-                overflow: scroll;                  
-                cursor: pointer;
-                padding: 10px;
-                height: 100%;
-                width: 50%;
 
-                h3 {
-                    margin: 40px auto;
-                    font-size: 28px;
-                    color: $cinza;
+                #euQuero {
+                    padding: 10px 20px;
+                    background-color: $cinza;
+                    border: 1px solid $cinza-claro;
+                    border-radius: 5px;
+                    margin-left: 10px;
+                    margin-top: 30px;
+                    cursor: pointer;
+                    font-size: 19px;
+                    color: $branco;
+
+                    &:hover {
+                        background-color: $branco;
+                        border-color: $cinza;
+                        color: $preto;
+                    }
                 }
-                p {
+            }
+        }
+    }
+
+    .modal2 {
+        display: none;
+    }
+
+    .modal2.active {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $pretoTrans;
+        position: absolute;
+        padding: 40px 0;
+        cursor: pointer;
+        height: 750px;
+        width: 100%;
+        top: -20px;
+        z-index: 1;
+
+        #modal2 {
+            background-color: $branco;
+            overflow: scroll;
+            cursor: pointer;
+            padding: 10px;
+            height: 100%;
+            width: 50%;
+
+            h3 {
+                margin: 40px auto;
+                font-size: 28px;
+                color: $cinza;
+            }
+
+            p {
                 text-align: justify;
                 font-size: 20px;
                 color: $cinza;
-                }
-                #obs {
-                    text-align: justify;
-                    font-size: 20px;
-                    color: $cinza; 
-                }
-                #bodyServico {
-                    border: 2px solid $cinza;
-                    width: 100%;
-                    height: 150%;
-                    .detalheModal{
-                        padding: 5px 10px;
-                        h3 {
-                            margin: 10px auto;
-                            font-size: 25px;
-                            color: $cinza;
-                        }
-                        p {
-                            text-align: justify;
-                            font-size: 20px;
-                            color: $cinza;
-                            }
-                    }
-                }
             }
-            }
-            .modal3 {
-                display: none;
-            }
-         .modal3.active{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color:$pretoTrans;
-            position: absolute;
-            padding: 40px 0;
-            cursor: pointer;
-            height: 750px;
-            width: 100%;
-            top: -20px;
-            z-index: 1;
-            #modal3{
-                background-color: $branco; 
-                overflow: scroll;                  
-                cursor: pointer;
-                padding: 10px;
-                height: 100%;
-                width: 50%;
 
-                h3 {
-                    margin: 40px auto;
-                    font-size: 28px;
-                    color: $cinza;
-                }
-                p {
+            #obs {
                 text-align: justify;
                 font-size: 20px;
                 color: $cinza;
+            }
+
+            #bodyServico {
+                border: 2px solid $cinza;
+                width: 100%;
+                height: 150%;
+
+                .detalheModal {
+                    padding: 5px 10px;
+
+                    h3 {
+                        margin: 10px auto;
+                        font-size: 25px;
+                        color: $cinza;
+                    }
+
+                    p {
+                        text-align: justify;
+                        font-size: 20px;
+                        color: $cinza;
+                    }
+
                 }
-                #obs {
-                    text-align: justify;
-                    font-size: 20px;
-                    color: $cinza; 
-                }
-                #bodyServico {
-                    border: 2px solid $cinza;
-                    width: 100%;
-                    height: 100%;
-                    .detalheModal{
-                        padding: 5px 10px;
-                        h3 {
-                            margin: 10px auto;
-                            font-size: 25px;
-                            color: $cinza;
-                        }
-                        p {
-                            text-align: justify;
-                            font-size: 20px;
-                            color: $cinza;
-                            }
+
+                #euQuero2 {
+                    padding: 10px 20px;
+                    background-color: $cinza;
+                    border: 1px solid $cinza-claro;
+                    border-radius: 5px;
+                    margin-left: 10px;
+                    margin-top: 27px;
+                    cursor: pointer;
+                    font-size: 19px;
+                    color: $branco;
+
+                    &:hover {
+                        background-color: $branco;
+                        border-color: $cinza;
+                        color: $preto;
                     }
                 }
             }
+        }
+    }
+
+    .modal3 {
+        display: none;
+    }
+
+    .modal3.active {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $pretoTrans;
+        position: absolute;
+        padding: 40px 0;
+        cursor: pointer;
+        height: 750px;
+        width: 100%;
+        top: -20px;
+        z-index: 1;
+
+        #modal3 {
+            background-color: $branco;
+            overflow: scroll;
+            cursor: pointer;
+            padding: 10px;
+            height: 100%;
+            width: 50%;
+
+            h3 {
+                margin: 40px auto;
+                font-size: 28px;
+                color: $cinza;
             }
+
+            p {
+                text-align: justify;
+                font-size: 20px;
+                color: $cinza;
+            }
+
+            #obs {
+                text-align: justify;
+                font-size: 20px;
+                color: $cinza;
+            }
+
+            #bodyServico {
+                border: 2px solid $cinza;
+                width: 100%;
+                height: 100%;
+
+                .detalheModal {
+                    padding: 5px 10px;
+
+                    h3 {
+                        margin: 10px auto;
+                        font-size: 25px;
+                        color: $cinza;
+                    }
+
+                    p {
+                        text-align: justify;
+                        font-size: 20px;
+                        color: $cinza;
+                    }
+                }
+
+                #euQuero3 {
+                    padding: 10px 20px;
+                    background-color: $cinza;
+                    border: 1px solid $cinza-claro;
+                    border-radius: 5px;
+                    margin-left: 10px;
+                    margin-top: 45px;
+                    cursor: pointer;
+                    font-size: 19px;
+                    color: $branco;
+
+                    &:hover {
+                        background-color: $branco;
+                        border-color: $cinza;
+                        color: $preto;
+                    }
+                }
+            }
+        }
+    }
+
     // Aqui vai a formatação dos cards da section sobre
     #cards {
         display: flex;
@@ -228,15 +313,15 @@
             background-repeat: no-repeat;
             background-size: cover;
             transition: 5s all;
-            
-            &:hover{
+
+            &:hover {
                 background: url("../imagens/istockphoto-1325074732-612x612.jpg");
                 background-repeat: no-repeat;
                 background-position: center;
                 transition: 5s all;
                 cursor: pointer;
             }
-          
+
         }
 
         .card:nth-of-type(1) #spread {
@@ -249,20 +334,20 @@
             border: 1px solid $preto;
             transform-origin: center;
             border-radius: 100px;
-            padding-bottom:13px;
+            padding-bottom: 13px;
             transition: .5s all;
             margin-right: 10px;
-            margin-top:-20px;
+            margin-top: -20px;
             font-size: 30px;
             color: $branco;
             float: right;
             z-index: 5;
-            
+
             &:hover {
-                background: linear-gradient(-45deg, $azuel-escuro,$branco,$cinza);
-                transform:rotate(150deg);
+                background: linear-gradient(-45deg, $azuel-escuro, $branco, $cinza);
+                transform: rotate(150deg);
                 color: $azuel-escuro;
-                padding-bottom:19px;
+                padding-bottom: 19px;
                 transition: .5s all;
                 cursor: pointer;
             }
@@ -292,16 +377,17 @@
             background-repeat: no-repeat;
             background-size: cover;
             transition: 5s all;
-            
-            &:hover{
+
+            &:hover {
                 background: url("../imagens/istockphoto-1305224036-612x612.jpg");
                 background-repeat: no-repeat;
                 background-position: center;
                 transition: 5s all;
                 cursor: pointer;
             }
-          
+
         }
+
         .card:nth-of-type(2) #spread2 {
             width: 40px;
             height: 40px;
@@ -312,24 +398,25 @@
             border: 1px solid $preto;
             transform-origin: center;
             border-radius: 100px;
-            padding-bottom:13px;
+            padding-bottom: 13px;
             transition: .5s all;
             margin-right: 10px;
-            margin-top:-20px;
+            margin-top: -20px;
             font-size: 30px;
             color: $branco;
             float: right;
             z-index: 5;
-            
+
             &:hover {
-                background: linear-gradient(-45deg, $azuel-escuro,$branco,$cinza);
-                transform:rotate(150deg);
+                background: linear-gradient(-45deg, $azuel-escuro, $branco, $cinza);
+                transform: rotate(150deg);
                 color: $azuel-escuro;
-                padding-bottom:19px;
+                padding-bottom: 19px;
                 transition: .5s all;
                 cursor: pointer;
             }
         }
+
         .card:nth-of-type(2) #descricao {
             padding: 10px;
 
@@ -354,16 +441,17 @@
             background-repeat: no-repeat;
             background-size: cover;
             transition: 5s all;
-            
-            &:hover{
+
+            &:hover {
                 background: url("../imagens/istockphoto-1325074732-612x612.jpg");
                 background-repeat: no-repeat;
                 background-position: center;
                 transition: 5s all;
                 cursor: pointer;
             }
-          
+
         }
+
         .card:nth-of-type(3) #spread3 {
             width: 40px;
             height: 40px;
@@ -374,24 +462,25 @@
             border: 1px solid $preto;
             transform-origin: center;
             border-radius: 100px;
-            padding-bottom:13px;
+            padding-bottom: 13px;
             transition: .5s all;
             margin-right: 10px;
-            margin-top:-20px;
+            margin-top: -20px;
             font-size: 30px;
             color: $branco;
             float: right;
             z-index: 5;
-            
+
             &:hover {
-                background: linear-gradient(-45deg, $azuel-escuro,$branco,$cinza);
-                transform:rotate(150deg);
+                background: linear-gradient(-45deg, $azuel-escuro, $branco, $cinza);
+                transform: rotate(150deg);
                 color: $azuel-escuro;
-                padding-bottom:19px;
+                padding-bottom: 19px;
                 transition: .5s all;
                 cursor: pointer;
             }
         }
+
         .card:nth-of-type(3) #descricao {
             padding: 10px;
 
