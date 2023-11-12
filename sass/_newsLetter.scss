@@ -1,16 +1,18 @@
 // Inicio da formatação da section newsLetter
 #newsLetter {
-    display: block;
-    text-align: center;
+    display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    text-align: center;
     height: 200px;
     width: 100%;
 
     // Aqui esta a formatação do h2 p do newsLetter
     #news {
         line-height: 2;
+        text-align: center;
         h2 {
             font-size: calc(14px + 1vw);
             text-transform: uppercase;
@@ -27,13 +29,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 100%;
         padding: 10px;
         gap: 2px;
         input{
-            width: 600px;
-            height: 50px;
+            width: min(500px, 600px);
             border: 1px solid $preto;
             border-radius: 5px;
+            height: 50px;
         }
         button {
             width: 100px;
@@ -54,7 +57,16 @@
     }
     // Aqui esta a formatação do p  com os termos e politicas
     #politica {
+        text-align: center;
         margin-top: 10px;
         font-size: 19px;
+    }
+}
+
+@media screen and (max-width:770px){
+    #newsLetter{     
+        #news {
+            padding: 0 2%;
+        }
     }
 }

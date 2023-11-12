@@ -160,3 +160,71 @@
         }
     }
 }
+
+@media screen and (max-width:1500px) {
+    #projecto{
+
+        #cardsH {
+          .card{
+            width: 45%;
+          }
+        }
+    }
+}
+
+@media screen and (max-width:1050px) {
+    #projecto{
+        #cardsH{
+            flex-flow: wrap row;
+            .card{
+            width: 47%;
+          }
+        }
+    }
+}
+
+@media screen and (max-width:912px) {
+    #projecto{
+    height: auto;
+        #cardsH{
+            gap: 20px;
+            flex-direction: column;
+            .card{
+            width: 96%;
+            border: 1px solid $preto;
+            border-radius: 0 10px 0 0;
+
+            &:nth-of-type(1), &:nth-of-type(3) {
+                animation: identifier 1ms ease-in-out;
+                animation-timeline: view();
+                animation-range: 0 40%;
+            }
+            &:nth-of-type(2), &:nth-of-type(4) {
+                animation: animaViewEsquerdo 1ms ease-in-out;
+                animation-timeline: view();
+                animation-range: 0 40%;
+            }
+          }
+        }
+    }
+    @keyframes identifier {
+        from{
+            translate: -100vw 0;
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+            translate: 0 0;
+        }
+    }
+    @keyframes animaViewEsquerdo {
+        from{
+            translate: 100vw 0;
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+            translate: 0 0;
+        }
+    }
+}

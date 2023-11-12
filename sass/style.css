@@ -15,48 +15,54 @@
   font-size: calc(15px + 1vw);
 }
 
-@media screen and (min-width: 912px) {
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  width: 100%;
+  height: 100px;
+  padding: 0 10%;
+  position: fixed;
+  background-color: #060606;
+}
+#navbar #hamburgue {
+  display: none;
+}
+
+@media screen and (max-width: 1500px) {
   #navbar {
+    padding: 0 5%;
+  }
+}
+@media screen and (min-width: 1050.1px) {
+  #menu {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    z-index: 2;
-    width: 100%;
-    height: 100px;
-    padding: 0 10%;
-    position: fixed;
-    background-color: #060606;
-  }
-  #navbar #hamburgue {
-    display: none;
-  }
-  #navbar #menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    padding: 10px 5px;
     gap: 60px;
   }
-  #navbar #menu #menu-itens {
+  #menu #menu-itens {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     transition: 0.5s all;
     list-style: none;
     gap: 30px;
   }
-  #navbar #menu #menu-itens li a {
+  #menu #menu-itens li a {
     color: #fff;
-    padding-bottom: 8px;
     text-decoration: none;
     font-size: calc(10px + 1vw);
   }
-  #navbar #menu #menu-itens li:hover {
+  #menu #menu-itens li:hover {
     cursor: pointer;
     transition: 0.5s all;
     padding-bottom: 8px;
     border-bottom: 2px solid #fff;
   }
-  #navbar #menu #contato {
+  #menu #contato {
     list-style: none;
     padding: 10px 15px;
     border-radius: 5px;
@@ -64,32 +70,24 @@
     border: 1px solid #111111;
     transition: 0.5s all;
   }
-  #navbar #menu #contato li a {
+  #menu #contato li a {
     color: #fff;
     text-decoration: none;
     font-size: calc(10px + 1vw);
   }
-  #navbar #menu #contato:hover {
+  #menu #contato:hover {
     cursor: pointer;
     transition: 0.5s all;
     background-color: #fff;
     box-shadow: 2px 2px 8px rgba(255, 255, 255, 0.3803921569);
   }
-  #navbar #menu #contato:hover li a {
+  #menu #contato:hover li a {
     color: #111111;
   }
 }
-@media screen and (max-width: 912px) {
+@media screen and (max-width: 1050px) {
   #navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 4;
-    width: 100%;
-    height: 100px;
-    padding: 0 10%;
-    position: fixed;
-    background-color: #060606;
+    padding: 0 2%;
   }
   #navbar #hamburgue {
     transition: 0.5s all;
@@ -130,7 +128,6 @@
     height: auto;
     width: 100%;
     right: -200%;
-    z-index: -2;
   }
   #navbar #menu #menu-itens {
     display: flex;
@@ -187,6 +184,16 @@
   #navbar .activeMenu {
     right: 0% !important;
     transition: 0.5s all;
+  }
+}
+@media screen and (max-width: 800px) {
+  #navbar {
+    padding: 0 2%;
+  }
+  #navbar #hamburgue {
+    transition: 0.5s all;
+    height: 65px;
+    width: 65px;
   }
 }
 #header {
@@ -255,25 +262,51 @@
   width: 100%;
 }
 
+@media screen and (max-width: 1500px) {
+  #header {
+    width: 100%;
+  }
+  #header #opac {
+    width: 100%;
+    padding: 0 5%;
+  }
+}
+@media screen and (max-width: 1050px) {
+  #header {
+    width: 100%;
+  }
+  #header #opac {
+    width: 100%;
+    padding: 0 2%;
+  }
+}
+@media screen and (max-width: 770px) {
+  #header {
+    width: 100%;
+  }
+  #header #opac {
+    width: 100%;
+  }
+}
 #sobre {
   text-transform: uppercase;
   display: inline-block;
   text-align: center;
   margin: 20px 0;
-  height: 800px;
+  height: 660px;
   width: 100%;
 }
 #sobre h2 {
   font-size: calc(14px + 1vw);
   color: #025;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-align: center;
 }
 #sobre #hr hr {
-  margin: 0 auto;
   padding: 2px;
   width: 150px;
-  margin-bottom: 40px;
+  margin: 0 auto;
+  margin-bottom: 15px;
   background-color: #025;
 }
 #sobre #sobre-decrition {
@@ -281,15 +314,16 @@
   padding: 0 10%;
   align-items: center;
   justify-content: center;
-  height: 50%;
+  height: 47%;
   width: 100%;
+  gap: 10px;
 }
 #sobre #sobre-decrition #sobreNos {
-  display: block;
+  display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px 20px 20px 20px;
-  height: 90%;
+  padding: 0 20px 0 0;
+  height: 100%;
   width: 50%;
 }
 #sobre #sobre-decrition #sobreNos p {
@@ -301,7 +335,7 @@
 }
 #sobre #sobre-decrition #Img-sobre {
   width: 50%;
-  height: 90%;
+  height: 100%;
   background: url("../imagens/father-and-son-2258681_1280.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -321,10 +355,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 20px;
   padding: 0 10%;
   width: 100%;
-  height: 35%;
+  height: 40%;
   gap: 20px;
 }
 #sobre #saberMais .card {
@@ -334,16 +368,20 @@
   cursor: pointer;
   background-color: #eee;
 }
+#sobre #saberMais .card .icon i {
+  font-size: 50px;
+  color: rgb(87, 87, 87);
+}
 #sobre #saberMais .card h3 {
-  margin: 20px auto;
-  font-size: 25px;
+  margin-top: 5px;
+  font-size: 20px;
   color: rgb(87, 87, 87);
 }
 #sobre #saberMais .card #descricaoMissao {
   display: flex;
-  margin-top: 50px;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
 }
 #sobre #saberMais .card #descricaoMissao p {
   text-transform: capitalize;
@@ -353,10 +391,182 @@
   color: rgb(87, 87, 87);
 }
 
+@media screen and (max-width: 1500px) {
+  #sobre {
+    height: 625px;
+  }
+  #sobre #sobre-decrition {
+    margin-top: 20px;
+    padding: 0 5%;
+  }
+  #sobre #saberMais {
+    height: 39%;
+    padding: 0 5%;
+  }
+  #sobre #saberMais .card {
+    height: 100%;
+    width: 32.7%;
+    padding: 5px;
+    cursor: pointer;
+    background-color: #eee;
+  }
+}
+@media screen and (max-width: 1050px) {
+  #sobre #sobre-decrition {
+    padding: 0 2%;
+  }
+  #sobre #sobre-decrition #Img-sobre {
+    background-position-x: 90px;
+  }
+  #sobre #saberMais {
+    padding: 0 2%;
+  }
+}
+@media screen and (max-width: 912px) {
+  #sobre {
+    height: auto;
+  }
+  #sobre #sobre-decrition {
+    display: block;
+    height: 490px;
+  }
+  #sobre #sobre-decrition #sobreNos {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+  }
+  #sobre #sobre-decrition #Img-sobre {
+    height: 65%;
+    width: 100%;
+    background-position: center;
+  }
+  #sobre #saberMais {
+    padding: 0 2%;
+  }
+}
+@media screen and (max-width: 800px) {
+  #sobre #saberMais {
+    flex-flow: wrap row;
+    padding: 0 2%;
+    gap: 10px;
+  }
+  #sobre #saberMais .card:not(:nth-last-child(1)) {
+    width: 49.2%;
+  }
+  #sobre #saberMais .card:nth-last-child(1) {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 720px) {
+  #sobre #saberMais {
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width: 718px) {
+  #sobre #saberMais {
+    margin-top: 45px;
+  }
+}
+@media screen and (max-width: 710px) {
+  #sobre #saberMais .card:not(:nth-last-child(1)) {
+    width: 49%;
+  }
+  #sobre #saberMais .card:nth-last-child(1) {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 620px) {
+  #sobre #saberMais {
+    margin-top: 60px;
+  }
+  #sobre #saberMais .card:not(:nth-last-child(1)) {
+    height: 250px;
+    width: 48.5% !important;
+  }
+}
+@media screen and (max-width: 608px) {
+  #sobre #saberMais {
+    margin-top: 80px;
+  }
+}
+@media screen and (max-width: 528px) {
+  #sobre #saberMais {
+    margin-top: 110px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #sobre #saberMais {
+    margin-top: 140px;
+  }
+}
+@media screen and (max-width: 425px) {
+  #sobre #saberMais {
+    margin-top: 165px;
+  }
+}
+@media screen and (max-width: 402px) {
+  #sobre #saberMais {
+    margin-top: 198px;
+  }
+}
+@media screen and (max-width: 367px) {
+  #sobre #saberMais {
+    margin-top: 230px;
+  }
+  #sobre #saberMais .card:not(:nth-last-child(1)) {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 362px) {
+  #sobre #saberMais .card:not(:nth-last-child(1)) {
+    width: 47.8% !important;
+  }
+}
+@media screen and (max-width: 339px) {
+  #sobre #saberMais {
+    margin-top: 270px;
+  }
+}
+@media screen and (max-width: 328px) {
+  #sobre #saberMais {
+    margin-top: 300px;
+  }
+}
+@media screen and (max-width: 312px) {
+  #sobre #saberMais {
+    margin-top: 320px;
+  }
+}
+@media screen and (max-width: 307px) {
+  #sobre #saberMais {
+    margin-top: 320px;
+  }
+  #sobre #saberMais .card:not(:nth-last-child(1)) {
+    height: auto;
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 290px) {
+  #sobre #saberMais {
+    margin-top: 350px;
+  }
+}
+@media screen and (max-width: 278px) {
+  #sobre #saberMais {
+    margin-top: 375px;
+  }
+}
+@media screen and (max-width: 243px) {
+  #sobre #saberMais {
+    margin-top: 410px;
+  }
+}
 #servicos {
-  height: 700px;
+  height: 780px;
   margin-top: 30px;
   position: relative;
+  width: 100%;
 }
 #servicos h2 {
   font-size: calc(14px + 1vw);
@@ -374,11 +584,11 @@
 }
 #servicos #p {
   margin-top: 40px;
-  font-weight: 500;
   text-align: center;
-  margin-bottom: 70px;
+  margin-bottom: 20px;
+  font-size: calc(10px + 1vw);
   padding: 0 10%;
-  font-size: calc(5px + 1vw);
+  color: rgb(87, 87, 87);
 }
 #servicos .modal {
   display: none;
@@ -398,11 +608,11 @@
 }
 #servicos .modal.active #modal {
   background-color: #fff;
+  width: 70%;
   overflow: scroll;
   cursor: pointer;
   padding: 10px;
   height: 100%;
-  width: 50%;
 }
 #servicos .modal.active #modal h3 {
   margin: 40px auto;
@@ -422,7 +632,7 @@
 #servicos .modal.active #modal #bodyServico {
   border: 2px solid rgb(87, 87, 87);
   width: 100%;
-  height: 95%;
+  height: auto;
 }
 #servicos .modal.active #modal #bodyServico .detalheModal {
   padding: 5px 10px;
@@ -471,11 +681,11 @@
 }
 #servicos .modal2.active #modal2 {
   background-color: #fff;
+  width: 70%;
   overflow: scroll;
   cursor: pointer;
   padding: 10px;
   height: 100%;
-  width: 50%;
 }
 #servicos .modal2.active #modal2 h3 {
   margin: 40px auto;
@@ -495,7 +705,7 @@
 #servicos .modal2.active #modal2 #bodyServico {
   border: 2px solid rgb(87, 87, 87);
   width: 100%;
-  height: 150%;
+  height: auto;
 }
 #servicos .modal2.active #modal2 #bodyServico .detalheModal {
   padding: 5px 10px;
@@ -544,11 +754,11 @@
 }
 #servicos .modal3.active #modal3 {
   background-color: #fff;
+  width: 70%;
   overflow: scroll;
   cursor: pointer;
   padding: 10px;
   height: 100%;
-  width: 50%;
 }
 #servicos .modal3.active #modal3 h3 {
   margin: 40px auto;
@@ -568,7 +778,7 @@
 #servicos .modal3.active #modal3 #bodyServico {
   border: 2px solid rgb(87, 87, 87);
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 #servicos .modal3.active #modal3 #bodyServico .detalheModal {
   padding: 5px 10px;
@@ -603,15 +813,30 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 10%;
   margin: 20px 0;
-  height: 400px;
+  height: 580px;
   width: 100%;
   gap: 20px;
 }
 #servicos #cards .card {
   width: 420px;
-  height: 500px;
+  height: 100%;
   background-color: #eee;
+}
+#servicos #cards .card #descricao {
+  padding: 10px;
+}
+#servicos #cards .card #descricao h3 {
+  left: 0;
+  margin: 20px 0;
+  font-size: calc(15px + 1vw);
+  font-weight: 900;
+}
+#servicos #cards .card #descricao p {
+  text-align: justify;
+  font-size: 20px;
+  color: rgb(87, 87, 87);
 }
 #servicos #cards .card:nth-of-type(1) #img {
   width: 100%;
@@ -655,20 +880,6 @@
   transition: 0.5s all;
   cursor: pointer;
 }
-#servicos #cards .card:nth-of-type(1) #descricao {
-  padding: 10px;
-}
-#servicos #cards .card:nth-of-type(1) #descricao h3 {
-  left: 0;
-  margin: 20px 0;
-  font-size: calc(15px + 1vw);
-  font-weight: 900;
-}
-#servicos #cards .card:nth-of-type(1) #descricao p {
-  text-align: justify;
-  font-size: 18px;
-  color: rgb(87, 87, 87);
-}
 #servicos #cards .card:nth-of-type(2) #img {
   width: 100%;
   height: 300px;
@@ -710,20 +921,6 @@
   padding-bottom: 19px;
   transition: 0.5s all;
   cursor: pointer;
-}
-#servicos #cards .card:nth-of-type(2) #descricao {
-  padding: 10px;
-}
-#servicos #cards .card:nth-of-type(2) #descricao h3 {
-  left: 0;
-  margin: 20px 0;
-  font-size: calc(15px + 1vw);
-  font-weight: 900;
-}
-#servicos #cards .card:nth-of-type(2) #descricao p {
-  text-align: justify;
-  font-size: 18px;
-  color: rgb(87, 87, 87);
 }
 #servicos #cards .card:nth-of-type(3) #img {
   width: 100%;
@@ -767,21 +964,44 @@
   transition: 0.5s all;
   cursor: pointer;
 }
-#servicos #cards .card:nth-of-type(3) #descricao {
-  padding: 10px;
-}
-#servicos #cards .card:nth-of-type(3) #descricao h3 {
-  left: 0;
-  margin: 20px 0;
-  font-size: calc(15px + 1vw);
-  font-weight: 900;
-}
-#servicos #cards .card:nth-of-type(3) #descricao p {
-  text-align: justify;
-  font-size: 18px;
-  color: rgb(87, 87, 87);
-}
 
+@media screen and (max-width: 1500px) {
+  #servicos {
+    width: 100%;
+  }
+  #servicos #p {
+    padding: 0 5%;
+  }
+  #servicos #cards {
+    width: 100%;
+    padding: 0 5%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  #servicos {
+    width: 100%;
+  }
+  #servicos #cards {
+    width: 100%;
+  }
+  #servicos #cards .card {
+    width: 329.5px;
+    height: 100%;
+    background-color: #eee;
+  }
+}
+@media screen and (max-width: 770px) {
+  #servicos {
+    width: 100%;
+  }
+  #servicos #p {
+    padding: 0 2%;
+  }
+  #servicos #cards {
+    width: 100%;
+    padding: 0 2%;
+  }
+}
 #projecto {
   margin-bottom: 20px;
   margin-top: 10px;
@@ -931,17 +1151,76 @@
   text-align: justify;
 }
 
+@media screen and (max-width: 1500px) {
+  #projecto #cardsH .card {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 1050px) {
+  #projecto #cardsH {
+    flex-flow: wrap row;
+  }
+  #projecto #cardsH .card {
+    width: 47%;
+  }
+}
+@media screen and (max-width: 912px) {
+  #projecto {
+    height: auto;
+  }
+  #projecto #cardsH {
+    gap: 20px;
+    flex-direction: column;
+  }
+  #projecto #cardsH .card {
+    width: 96%;
+    border: 1px solid #111111;
+    border-radius: 0 10px 0 0;
+  }
+  #projecto #cardsH .card:nth-of-type(1), #projecto #cardsH .card:nth-of-type(3) {
+    animation: identifier 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: 0 40%;
+  }
+  #projecto #cardsH .card:nth-of-type(2), #projecto #cardsH .card:nth-of-type(4) {
+    animation: animaViewEsquerdo 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: 0 40%;
+  }
+  @keyframes identifier {
+    from {
+      translate: -100vw 0;
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+      translate: 0 0;
+    }
+  }
+  @keyframes animaViewEsquerdo {
+    from {
+      translate: 100vw 0;
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+      translate: 0 0;
+    }
+  }
+}
 #newsLetter {
-  display: block;
-  text-align: center;
+  display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  text-align: center;
   height: 200px;
   width: 100%;
 }
 #newsLetter #news {
   line-height: 2;
+  text-align: center;
 }
 #newsLetter #news h2 {
   font-size: calc(14px + 1vw);
@@ -957,14 +1236,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   padding: 10px;
   gap: 2px;
 }
 #newsLetter #imputNews input {
-  width: 600px;
-  height: 50px;
+  width: 500px;
   border: 1px solid #111111;
   border-radius: 5px;
+  height: 50px;
 }
 #newsLetter #imputNews button {
   width: 100px;
@@ -983,10 +1263,16 @@
   transition: 0.5s all;
 }
 #newsLetter #politica {
+  text-align: center;
   margin-top: 10px;
   font-size: 19px;
 }
 
+@media screen and (max-width: 770px) {
+  #newsLetter #news {
+    padding: 0 2%;
+  }
+}
 #footer {
   width: 100%;
   height: 360px;
@@ -1009,17 +1295,12 @@
 #footer .links:nth-of-type(1) {
   display: flex;
   align-items: center;
+  margin: 20px 0;
 }
 #footer .links:nth-of-type(1) h1 {
   color: rgb(87, 87, 87);
   font-size: 30px;
   font-weight: bold;
-  transition: 1s all;
-}
-#footer .links:nth-of-type(1) h1:hover {
-  transition: 1s all;
-  cursor: pointer;
-  color: #fff;
 }
 #footer .links:nth-of-type(2) h3 {
   font-size: 25px;
@@ -1070,4 +1351,38 @@
   margin-top: 20px;
   text-align: center;
   border-top: 2px solid #fff;
+}
+
+@media screen and (max-width: 1500px) {
+  #footer #linksRapidos {
+    padding: 0 5%;
+  }
+}
+@media screen and (max-width: 1050px) {
+  #footer #linksRapidos {
+    padding: 0 2%;
+  }
+}
+@media screen and (max-width: 450px) {
+  #footer {
+    height: auto;
+  }
+  #footer #linksRapidos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #footer #linksRapidos #logoFooter {
+    display: block;
+    text-align: center;
+  }
+  #footer #linksRapidos .links {
+    display: none;
+  }
+  #footer #linksRapidos .links ul {
+    display: none;
+  }
+  #footer #linksRapidos .links ul li a {
+    font-size: 25px;
+  }
 }/*# sourceMappingURL=style.css.map */

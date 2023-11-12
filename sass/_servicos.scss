@@ -1,8 +1,9 @@
 //   Inicio da formatação dos serviços
 #servicos {
-    height: 700px;
+    height: 780px;
     margin-top: 30px;
     position: relative;
+    width: 100%;
 
     h2 {
         font-size: calc(14px + 1vw);
@@ -24,12 +25,11 @@
 
     #p {
         margin-top: 40px;
-        font-weight: 500;
         text-align: center;
-        margin-bottom: 70px;
+        margin-bottom: 20px;
+        font-size: calc(10px + 1vw);
         padding: 0 10%;
-        font-size: calc(5px + 1vw);
-
+        color: $cinza;
     }
 
 
@@ -53,11 +53,11 @@
 
         #modal {
             background-color: $branco;
+            width: min(80%, 70%);
             overflow: scroll;
             cursor: pointer;
             padding: 10px;
             height: 100%;
-            width: 50%;
 
             h3 {
                 margin: 40px auto;
@@ -80,7 +80,7 @@
             #bodyServico {
                 border: 2px solid $cinza;
                 width: 100%;
-                height: 95%;
+                height: auto;
 
                 .detalheModal {
                     padding: 5px 10px;
@@ -138,11 +138,11 @@
 
         #modal2 {
             background-color: $branco;
+            width: min(80%, 70%);
             overflow: scroll;
             cursor: pointer;
             padding: 10px;
             height: 100%;
-            width: 50%;
 
             h3 {
                 margin: 40px auto;
@@ -165,7 +165,7 @@
             #bodyServico {
                 border: 2px solid $cinza;
                 width: 100%;
-                height: 150%;
+                height: auto;
 
                 .detalheModal {
                     padding: 5px 10px;
@@ -224,11 +224,11 @@
 
         #modal3 {
             background-color: $branco;
+            width: min(80%, 70%);
             overflow: scroll;
             cursor: pointer;
             padding: 10px;
             height: 100%;
-            width: 50%;
 
             h3 {
                 margin: 40px auto;
@@ -251,7 +251,7 @@
             #bodyServico {
                 border: 2px solid $cinza;
                 width: 100%;
-                height: 100%;
+                height: auto;
 
                 .detalheModal {
                     padding: 5px 10px;
@@ -295,15 +295,33 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 0 10%;
         margin: 20px 0;
-        height: 400px;
+        height: 580px;
         width: 100%;
         gap: 20px;
 
         .card {
             width: 420px;
-            height: 500px;
+            height: 100%;
             background-color: $cinza-claro;
+
+            #descricao {
+                padding: 10px;
+
+                h3 {
+                    left: 0;
+                    margin: 20px 0;
+                    font-size: calc(15px + 1vw);
+                    font-weight: 900;
+                }
+
+                p {
+                    text-align: justify;
+                    font-size: 20px;
+                    color: $cinza;
+                }
+            }
         }
 
         .card:nth-of-type(1) #img {
@@ -350,23 +368,6 @@
                 padding-bottom: 19px;
                 transition: .5s all;
                 cursor: pointer;
-            }
-        }
-
-        .card:nth-of-type(1) #descricao {
-            padding: 10px;
-
-            h3 {
-                left: 0;
-                margin: 20px 0;
-                font-size: calc(15px + 1vw);
-                font-weight: 900;
-            }
-
-            p {
-                text-align: justify;
-                font-size: 18px;
-                color: $cinza;
             }
         }
 
@@ -417,23 +418,6 @@
             }
         }
 
-        .card:nth-of-type(2) #descricao {
-            padding: 10px;
-
-            h3 {
-                left: 0;
-                margin: 20px 0;
-                font-size: calc(15px + 1vw);
-                font-weight: 900;
-            }
-
-            p {
-                text-align: justify;
-                font-size: 18px;
-                color: $cinza;
-            }
-        }
-
         .card:nth-of-type(3) #img {
             width: 100%;
             height: 300px;
@@ -481,22 +465,46 @@
             }
         }
 
-        .card:nth-of-type(3) #descricao {
-            padding: 10px;
+    }
+}
 
-            h3 {
-                left: 0;
-                margin: 20px 0;
-                font-size: calc(15px + 1vw);
-                font-weight: 900;
-            }
-
-            p {
-                text-align: justify;
-                font-size: 18px;
-                color: $cinza;
-            }
+@media screen and (max-width:1500px) {
+    #servicos {
+        width: 100%;
+        #p{
+            padding: 0 5%;
         }
+        #cards{
+            width: 100%;
+            padding: 0 5%;
+        }
+    }
+}
 
+@media screen and (max-width:1100px) {
+    #servicos {
+        width: 100%;
+        #cards {
+            width: 100%;
+            .card {
+                width: 329.5px;
+                height: 100%;
+                background-color: $cinza-claro;
+            }       
+         }
+
+    }
+}
+
+@media screen and (max-width:770px) {
+    #servicos {
+        width: 100%;
+        #p{
+            padding: 0 2%;
+        }
+        #cards{
+            width: 100%;
+            padding: 0 2%;
+        }
     }
 }

@@ -1,4 +1,4 @@
-const spread=document.querySelector("#spread");
+const spread=document.querySelector("#spread")
 const spread2=document.querySelector("#spread2");
 const spread3=document.querySelector("#spread3");
 
@@ -15,7 +15,6 @@ const body=document.querySelector("body");
 // Inicio da formatação do menu hamburgue
 const hamburgue=document.querySelector("#hamburgue");
 const menu=document.querySelector("#menu");
-
 
 
 export {hamburgue, menu, spread, spread2, spread3, modal, modal2, modal3, EuQuero, EuQuero2, EuQuero3, body}

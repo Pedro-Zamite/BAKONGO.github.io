@@ -1,42 +1,46 @@
 // Inicio da section sobre
-#sobre{
+
+#sobre {
     text-transform: uppercase;
     display: inline-block;
     text-align: center;
     margin: 20px 0;
-    height: 800px;
+    height: 660px;
     width: 100%;
-    
+
     h2 {
         font-size: calc(14px + 1vw);
         color: $azuel-escuro;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         text-align: center;
     }
-    
+
     #hr {
         hr {
-            margin: 0 auto;
             padding: 2px;
-            width: 150px; 
-            margin-bottom: 40px;
+            width: 150px;
+            margin: 0 auto;
+            margin-bottom: 15px;
             background-color: $azuel-escuro;
         }
     }
+
     // Aqui esta a formatação da section descrição
     #sobre-decrition {
         display: flex;
-        padding: 0 10%; 
+        padding: 0 10%;
         align-items: center;
         justify-content: center;
-        height: 50%;
-        width:100%;
+        height: 47%;
+        width: 100%;
+        gap: 10px;
+
         #sobreNos {
-            display:block;
+            display: flex;
             align-items: center;
             justify-content: center;
-            padding:40px 20px 20px 20px;
-            height: 90%;
+            padding: 0 20px 0 0;
+            height: 100%;
             width: 50%;
 
             p {
@@ -47,9 +51,10 @@
                 color: $cinza;
             }
         }
-        #Img-sobre{
+
+        #Img-sobre {
             width: 50%;
-            height: 90%;
+            height:100%;
             background: url("../imagens/father-and-son-2258681_1280.jpg");
             background-attachment: fixed;
             background-repeat: no-repeat;
@@ -57,7 +62,7 @@
             background-position-x: 300px;
             background-size: cover;
 
-               &:hover #sobreOpac {
+            &:hover #sobreOpac {
                 width: 100%;
                 height: 100%;
                 cursor: pointer;
@@ -73,39 +78,286 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 40px;
+        margin-top: 20px;
         padding: 0 10%;
         width: 100%;
-        height:35%;
+        height: 40%;
         gap: 20px;
+
         .card {
             height: 100%;
             width: 420px;
             padding: 10px;
             cursor: pointer;
             background-color: $cinza-claro;
+            .icon {
+                i{
+                    font-size: 50px;
+                    color: $cinza;
+                }
+            }
 
             h3 {
-                margin: 20px auto;
-                font-size: 25px;
+                margin-top: 5px;
+                font-size: 20px;
                 color: $cinza;
             }
 
-            #descricaoMissao{
+            #descricaoMissao {
                 display: flex;
-                margin-top: 50px;
                 align-items: center;
                 justify-content: center;
-                p{
-                    text-transform:capitalize;
+                margin-top: 20px;
+                p {
+                    text-transform: capitalize;
                     text-align: center;
                     line-height: 1.5;
                     font-size: 18px;
                     color: $cinza;
                 }
             }
-           
-           
+
+
         }
+    }
+}
+
+@media screen and (max-width:1500px) {
+    #sobre {
+        height: 625px;
+        #sobre-decrition {
+            margin-top: 20px;
+            padding: 0 5%;
+        }
+
+        #saberMais {
+            height: 39%;
+            padding: 0 5%;
+
+            .card {
+                height: 100%;
+                width: 32.7%;
+                padding: 5px;
+                cursor: pointer;
+                background-color: $cinza-claro;
+            }
+
+        }
+    }
+}
+@media screen and (max-width:1050px) {
+    #sobre {
+
+        #sobre-decrition {
+            padding: 0 2%;
+
+            #Img-sobre {
+                background-position-x: 90px;
+            }
+        }
+
+        #saberMais {
+            padding: 0 2%;
+        }
+    }
+}
+@media screen and (max-width:912px) {
+    #sobre {
+        height:auto;
+        #sobre-decrition {
+            display: block;
+            height: 490px;
+            #sobreNos {
+                width: 100%;
+                height: auto;
+                display: block;
+                margin-bottom: 20px;
+            }
+
+            #Img-sobre {
+                height: 65%;
+                width: 100%;
+                background-position: center;
+            }
+        }
+
+        #saberMais {
+            padding: 0 2%;
+        }
+    }
+}
+@media screen and (max-width:800px) {
+    #sobre {   
+        #saberMais {
+            flex-flow: wrap row;
+            padding: 0 2%;
+            gap: 10px;
+
+            .card {
+                &:not(:nth-last-child(1)) {
+                    width: 49.2%;
+                }
+
+                &:nth-last-child(1) {
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+}
+@media screen and (max-width:720px) {
+    #sobre{
+        #saberMais {
+            margin-top: 25px;
+              }
+    }
+}
+@media screen and (max-width:718px) {
+    #sobre{
+        #saberMais {
+            margin-top: 45px;
+              }
+    }
+}
+@media screen and (max-width:710px) {
+    #sobre{
+        #saberMais {
+            .card{
+                &:not(:nth-last-child(1)) {
+                    width: 49%;
+                }
+
+                &:nth-last-child(1) {
+                    width: 100%;
+                }
+            }
+              }
+    }
+}
+@media screen and (max-width:620px) {
+    #sobre{
+        #saberMais {
+            margin-top: 60px;
+            .card {
+                &:not(:nth-last-child(1)) {
+                    height: 250px;
+                    width: 48.5% !important;
+                }
+            }
+              }
+    }
+}
+@media screen and (max-width:608px) {
+    #sobre{
+        #saberMais {
+          margin-top: 80px;
+              }
+    }
+}
+@media screen and (max-width:528px) {
+    #sobre{
+        #saberMais {
+          margin-top: 110px;  
+        }
+    }
+}
+@media screen and (max-width:480px) {
+    #sobre{
+        #saberMais {
+           margin-top: 140px;
+              }
+    }
+}
+@media screen and (max-width:425px) {
+    #sobre{
+        #saberMais {
+            margin-top: 165px;
+              }
+    }
+}
+@media screen and (max-width:402px) {
+    #sobre{
+        #saberMais {
+            margin-top: 198px;
+              }
+    }
+}
+@media screen and (max-width:367px) {
+    #sobre{
+        #saberMais {
+            margin-top: 230px;
+            .card {
+                &:not(:nth-last-child(1)) {
+                   height: 300px;
+                }
+            }
+              }
+    }
+}
+@media screen and (max-width:362px) {
+    #sobre{
+        #saberMais {
+            .card {
+                &:not(:nth-last-child(1)) {
+                    width: 47.8% !important;
+                }
+            }
+              }
+    }
+}
+@media screen and (max-width:339px) {
+    #sobre{
+        #saberMais {
+            margin-top: 270px;
+              }
+    }
+}
+@media screen and (max-width:328px) {
+    #sobre{
+        #saberMais {
+          margin-top: 300px;
+              }
+    }
+}
+@media screen and (max-width:312px) {
+    #sobre{
+        #saberMais {
+            margin-top: 320px;
+              }
+    }
+}
+@media screen and (max-width:307px) {
+    #sobre{
+        #saberMais {
+            margin-top: 320px;
+            .card {
+                &:not(:nth-last-child(1)) {
+                    height: auto;
+                    width: 100% !important;
+                }
+            }
+              }
+    }
+}
+@media screen and (max-width:290px) {
+    #sobre{
+        #saberMais {
+            margin-top: 350px;
+              }
+    }
+}
+@media screen and (max-width:278px) {
+    #sobre{
+        #saberMais {
+            margin-top: 375px;
+              }
+    }
+}
+@media screen and (max-width:243px) {
+    #sobre{
+        #saberMais {
+            margin-top: 410px;
+              }
     }
 }

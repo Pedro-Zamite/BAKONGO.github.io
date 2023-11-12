@@ -21,17 +21,11 @@
             &:nth-of-type(1) {
                 display: flex;
                 align-items: center;
-        
+                margin: 20px 0;
                 h1 {
                     color: $cinza;
                     font-size: 30px;
                     font-weight: bold;
-                    transition: 1s all;
-                    &:hover {
-                        transition: 1s all;
-                        cursor: pointer;
-                        color: $branco;
-                    }
                 }
             }
             &:nth-of-type(2) {
@@ -96,3 +90,43 @@
             border-top: 2px solid $branco ;
         }
     } 
+
+    @media screen and (max-width:1500px) {
+        #footer{
+            #linksRapidos {
+                padding: 0 5%;
+            }
+        }
+    }
+    @media screen and (max-width:1050px) {
+        #footer{
+            #linksRapidos {
+                padding: 0 2%;
+            }
+        }
+    }
+    @media screen and (max-width:450px){
+        #footer{
+            height: auto; 
+            #linksRapidos {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                #logoFooter{
+                    display: block;
+                    text-align: center;
+                }
+                .links {
+                    display: none;
+                    ul{
+                        display: none;
+                        li{
+                            a{
+                                font-size: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
