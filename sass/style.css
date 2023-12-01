@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  scroll-padding-top: 7.2em;
+  scroll-padding-top: 5em;
 }
 
 #logo h1 {
@@ -21,7 +21,7 @@
   justify-content: space-between;
   z-index: 1;
   width: 100%;
-  height: 100px;
+  height: 80px;
   padding: 0 10%;
   position: fixed;
   background-color: #060606;
@@ -148,7 +148,6 @@
     background-color: rgba(238, 238, 238, 0.7411764706);
   }
   #navbar #menu #menu-itens li:hover a {
-    padding: 20px 42%;
     color: #111111;
   }
   #navbar #menu #menu-itens li a {
@@ -166,20 +165,20 @@
     padding: 20px;
     cursor: pointer;
     list-style: none;
-    background-color: rgba(219, 21, 21, 0.927);
+    background-color: #eee;
     border-top: 3px solid #fff;
   }
   #navbar #menu #contato li a {
-    color: #fff;
+    color: #111111;
     text-decoration: none;
     font-size: calc(25px + 1vw);
   }
   #navbar #menu #contato li:hover {
-    background-color: #f00;
+    transition: 2s all;
+    background-image: linear-gradient(-45deg, rgb(87, 87, 87), #fff, #111111, #eee, rgb(87, 87, 87));
   }
   #navbar #menu #contato li:hover a {
-    width: 100%;
-    padding: 20px 35%;
+    color: #fff;
   }
   #navbar .activeMenu {
     right: 0% !important;
@@ -201,7 +200,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  height: 850px;
+  height: 650px;
   width: 100%;
 }
 #header #opac {
@@ -214,32 +213,30 @@
   height: 100%;
   width: 100%;
 }
-#header #opac #descricao {
-  line-height: -15%;
-}
-#header #opac #descricao h1 {
+#header #opac #descricao h2 {
   color: #fff;
-  font-weight: 900;
   text-align: center;
-  font-size: calc(60px + 1vw);
-  margin: 40px 0;
+  font-size: calc(50px + 1vw);
 }
 #header #opac #descricao p {
-  color: rgb(87, 87, 87);
-  padding: 0 50px;
+  padding: 50px 50px;
   text-align: center;
-  margin-bottom: 70px;
   font-size: calc(12px + 1vw);
+  background: linear-gradient(65deg, #fff, rgb(87, 87, 87), #eee, #fff);
+  background-size: 400% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 #header #opac #descricao #botao {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 5px;
 }
 #header #opac #descricao #botao .button {
   border: 1px solid #111111;
-  padding: 20px 40px;
+  padding: 15px 20px;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -343,13 +340,28 @@
   background-position-x: 300px;
   background-size: cover;
 }
+#sobre #sobre-decrition #Img-sobre div h3 {
+  display: none;
+}
 #sobre #sobre-decrition #Img-sobre:hover #sobreOpac {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   cursor: pointer;
   background-position-x: 300px;
   background-color: rgba(0, 0, 0, 0.6117647059);
   transition: 0.5s all;
+}
+#sobre #sobre-decrition #Img-sobre:hover #sobreOpac div {
+  transition: 1s all;
+}
+#sobre #sobre-decrition #Img-sobre:hover #sobreOpac div h3 {
+  display: block;
+  text-transform: capitalize;
+  text-decoration: underline;
+  color: #fff;
 }
 #sobre #saberMais {
   display: flex;
@@ -563,8 +575,8 @@
   }
 }
 #servicos {
-  height: 780px;
-  margin-top: 30px;
+  height: 560px;
+  margin-top: 5px;
   position: relative;
   width: 100%;
 }
@@ -572,21 +584,20 @@
   font-size: calc(14px + 1vw);
   text-transform: uppercase;
   color: #025;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-align: center;
 }
 #servicos #hr hr {
-  margin: 0 auto;
   padding: 2px;
   width: 150px;
-  margin-bottom: 40px;
+  margin: 0 auto;
   background-color: #025;
 }
 #servicos #p {
-  margin-top: 40px;
+  margin-top: 25px;
   text-align: center;
   margin-bottom: 20px;
-  font-size: calc(10px + 1vw);
+  font-size: calc(8px + 1vw);
   padding: 0 10%;
   color: rgb(87, 87, 87);
 }
@@ -595,15 +606,15 @@
 }
 #servicos .modal.active {
   display: flex;
+  position: fixed;
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.6117647059);
-  position: absolute;
-  padding: 40px 0;
+  padding: 20px 0 20px 0;
   cursor: pointer;
-  height: 750px;
+  height: 100vh;
   width: 100%;
-  top: -20px;
+  top: 2px;
   z-index: 1;
 }
 #servicos .modal.active #modal {
@@ -616,17 +627,17 @@
 }
 #servicos .modal.active #modal h3 {
   margin: 40px auto;
-  font-size: 28px;
+  font-size: 25px;
   color: rgb(87, 87, 87);
 }
 #servicos .modal.active #modal p {
   text-align: justify;
-  font-size: 20px;
+  font-size: 18px;
   color: rgb(87, 87, 87);
 }
 #servicos .modal.active #modal #obs {
   text-align: justify;
-  font-size: 20px;
+  font-size: 25px;
   color: rgb(87, 87, 87);
 }
 #servicos .modal.active #modal #bodyServico {
@@ -644,7 +655,7 @@
 }
 #servicos .modal.active #modal #bodyServico .detalheModal p {
   text-align: justify;
-  font-size: 20px;
+  font-size: 18px;
   color: rgb(87, 87, 87);
 }
 #servicos .modal.active #modal #bodyServico #euQuero {
@@ -668,15 +679,15 @@
 }
 #servicos .modal2.active {
   display: flex;
+  position: fixed;
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.6117647059);
-  position: absolute;
-  padding: 40px 0;
+  padding: 20px 0 20px 0;
   cursor: pointer;
-  height: 750px;
+  height: 100vh;
   width: 100%;
-  top: -20px;
+  top: 2px;
   z-index: 1;
 }
 #servicos .modal2.active #modal2 {
@@ -689,17 +700,17 @@
 }
 #servicos .modal2.active #modal2 h3 {
   margin: 40px auto;
-  font-size: 28px;
+  font-size: 25px;
   color: rgb(87, 87, 87);
 }
 #servicos .modal2.active #modal2 p {
   text-align: justify;
-  font-size: 20px;
+  font-size: 18px;
   color: rgb(87, 87, 87);
 }
 #servicos .modal2.active #modal2 #obs {
   text-align: justify;
-  font-size: 20px;
+  font-size: 25px;
   color: rgb(87, 87, 87);
 }
 #servicos .modal2.active #modal2 #bodyServico {
@@ -717,7 +728,7 @@
 }
 #servicos .modal2.active #modal2 #bodyServico .detalheModal p {
   text-align: justify;
-  font-size: 20px;
+  font-size: 18px;
   color: rgb(87, 87, 87);
 }
 #servicos .modal2.active #modal2 #bodyServico #euQuero2 {
@@ -741,15 +752,15 @@
 }
 #servicos .modal3.active {
   display: flex;
+  position: fixed;
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.6117647059);
-  position: absolute;
-  padding: 40px 0;
+  padding: 20px 0 20px 0;
   cursor: pointer;
-  height: 750px;
+  height: 100vh;
   width: 100%;
-  top: -20px;
+  top: 2px;
   z-index: 1;
 }
 #servicos .modal3.active #modal3 {
@@ -762,17 +773,17 @@
 }
 #servicos .modal3.active #modal3 h3 {
   margin: 40px auto;
-  font-size: 28px;
+  font-size: 25px;
   color: rgb(87, 87, 87);
 }
 #servicos .modal3.active #modal3 p {
   text-align: justify;
-  font-size: 20px;
+  font-size: 18px;
   color: rgb(87, 87, 87);
 }
 #servicos .modal3.active #modal3 #obs {
   text-align: justify;
-  font-size: 20px;
+  font-size: 25px;
   color: rgb(87, 87, 87);
 }
 #servicos .modal3.active #modal3 #bodyServico {
@@ -790,7 +801,7 @@
 }
 #servicos .modal3.active #modal3 #bodyServico .detalheModal p {
   text-align: justify;
-  font-size: 20px;
+  font-size: 18px;
   color: rgb(87, 87, 87);
 }
 #servicos .modal3.active #modal3 #bodyServico #euQuero3 {
@@ -815,7 +826,7 @@
   justify-content: center;
   padding: 0 10%;
   margin: 20px 0;
-  height: 580px;
+  height: 400px;
   width: 100%;
   gap: 20px;
 }
@@ -831,6 +842,7 @@
   left: 0;
   margin: 20px 0;
   font-size: calc(15px + 1vw);
+  color: rgb(87, 87, 87);
   font-weight: 900;
 }
 #servicos #cards .card #descricao p {
@@ -840,7 +852,7 @@
 }
 #servicos #cards .card:nth-of-type(1) #img {
   width: 100%;
-  height: 300px;
+  height: 200px;
   background: url("../imagens/istockphoto-1325074732-612x612.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -882,7 +894,7 @@
 }
 #servicos #cards .card:nth-of-type(2) #img {
   width: 100%;
-  height: 300px;
+  height: 200px;
   background: url("../imagens/istockphoto-1394297245-612x612.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -924,7 +936,7 @@
 }
 #servicos #cards .card:nth-of-type(3) #img {
   width: 100%;
-  height: 300px;
+  height: 200px;
   background: url("../imagens/istockphoto-1345532280-612x612.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -990,16 +1002,46 @@
     background-color: #eee;
   }
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 1050px) {
+  #servicos p {
+    padding: 0 2%;
+  }
+  #servicos .modal.active #modal {
+    width: 80% !important;
+  }
+  #servicos .modal2.active #modal2 {
+    width: 80% !important;
+  }
+  #servicos .modal3.active #modal3 {
+    width: 80% !important;
+  }
+  #servicos #cards {
+    padding: 0 2%;
+  }
+  #servicos #cards .card {
+    width: 329.5px;
+  }
+}
+@media screen and (max-width: 801px) {
   #servicos {
     width: 100%;
   }
-  #servicos #p {
-    padding: 0 2%;
+  #servicos .modal.active #modal {
+    width: 88% !important;
   }
+  #servicos .modal2.active #modal2 {
+    width: 88% !important;
+  }
+  #servicos .modal3.active #modal3 {
+    width: 88% !important;
+  }
+}
+@media screen and (max-width: 770px) {
   #servicos #cards {
-    width: 100%;
-    padding: 0 2%;
+    margin-left: -1%;
+    background-color: #f00;
+    width: 120%;
+    overflow-x: scroll;
   }
 }
 #projecto {
@@ -1012,23 +1054,22 @@
   font-size: calc(14px + 1vw);
   text-transform: uppercase;
   color: #025;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-align: center;
 }
 #projecto #hr hr {
   margin: 0 auto;
   padding: 2px;
   width: 150px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   background-color: #025;
 }
-#projecto #pp {
-  padding: 0 10%;
+#projecto p {
+  font-size: calc(8px + 1vw);
   text-align: center;
-}
-#projecto #pp p {
-  font-size: 18px;
   margin: 20px 0;
+  padding: 0 10%;
+  color: rgb(87, 87, 87);
 }
 #projecto #cardsH {
   display: flex;
@@ -1036,7 +1077,7 @@
   justify-content: center;
   background-color: rgb(87, 87, 87);
   flex-flow: wrap row;
-  padding: 20px 0;
+  padding: 20px 10%;
   margin: 20px 0;
   width: 100%;
   gap: 20px;
@@ -1045,8 +1086,8 @@
   display: flex;
   align-items: center;
   background-color: #eee;
-  height: 300px;
-  width: 40%;
+  height: 250px;
+  width: 48.5%;
 }
 #projecto #cardsH .card:nth-of-type(1) #foto {
   width: 40%;
@@ -1059,19 +1100,25 @@
   width: 60%;
   height: 100%;
   padding: 0 10px;
-  padding-top: 50px;
+  padding-top: 10px;
   justify-content: center;
   align-items: center;
   display: block;
 }
 #projecto #cardsH .card:nth-of-type(1) #descrição h3 {
   left: 0;
-  margin: 20px 0;
+  color: rgb(87, 87, 87);
   font-weight: 900;
+  margin: 5px 0 20px 0;
   font-size: calc(15px + 1vw);
 }
-#projecto #cardsH .card:nth-of-type(1) #descrição p {
-  text-align: justify;
+#projecto #cardsH .card:nth-of-type(1) #descrição ul {
+  list-style: none;
+}
+#projecto #cardsH .card:nth-of-type(1) #descrição ul li {
+  color: rgb(87, 87, 87);
+  font-size: 20px;
+  line-height: 1.5;
 }
 #projecto #cardsH .card:nth-of-type(2) #foto {
   width: 40%;
@@ -1085,19 +1132,25 @@
   width: 60%;
   height: 100%;
   padding: 0 10px;
-  padding-top: 50px;
+  padding-top: 10px;
   justify-content: center;
   align-items: center;
   display: block;
 }
 #projecto #cardsH .card:nth-of-type(2) #descrição h3 {
   left: 0;
-  margin: 20px 0;
+  color: rgb(87, 87, 87);
   font-weight: 900;
+  margin: 5px 0 20px 0;
   font-size: calc(15px + 1vw);
 }
-#projecto #cardsH .card:nth-of-type(2) #descrição p {
-  text-align: justify;
+#projecto #cardsH .card:nth-of-type(2) #descrição ul {
+  list-style: none;
+}
+#projecto #cardsH .card:nth-of-type(2) #descrição ul li {
+  color: rgb(87, 87, 87);
+  font-size: 20px;
+  line-height: 1.5;
 }
 #projecto #cardsH .card:nth-of-type(3) #foto {
   width: 40%;
@@ -1111,54 +1164,86 @@
   width: 60%;
   height: 100%;
   padding: 0 10px;
-  padding-top: 50px;
+  padding-top: 10px;
   justify-content: center;
   align-items: center;
   display: block;
 }
 #projecto #cardsH .card:nth-of-type(3) #descrição h3 {
   left: 0;
-  margin: 20px 0;
+  color: rgb(87, 87, 87);
   font-weight: 900;
+  margin: 5px 0 20px 0;
   font-size: calc(15px + 1vw);
 }
-#projecto #cardsH .card:nth-of-type(3) #descrição p {
-  text-align: justify;
+#projecto #cardsH .card:nth-of-type(3) #descrição ul {
+  list-style: none;
+}
+#projecto #cardsH .card:nth-of-type(3) #descrição ul li {
+  color: rgb(87, 87, 87);
+  font-size: 20px;
+  line-height: 1.5;
 }
 #projecto #cardsH .card:nth-of-type(4) #foto {
   width: 40%;
   height: 100%;
-  background: url("../imagens/cardsHorizontal/qu1ifprsvfarhmp2atdr89u9qjfofaolcjzq_620x620+fill_ffffff.webp");
+  background: url("../imagens/cardsHorizontal/pedro.png");
   background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: -35px;
   background-size: cover;
 }
 #projecto #cardsH .card:nth-of-type(4) #descrição {
   width: 60%;
   height: 100%;
   padding: 0 10px;
-  padding-top: 50px;
+  padding-top: 10px;
   justify-content: center;
   align-items: center;
   display: block;
 }
 #projecto #cardsH .card:nth-of-type(4) #descrição h3 {
   left: 0;
-  margin: 20px 0;
+  color: rgb(87, 87, 87);
   font-weight: 900;
+  margin: 5px 0 20px 0;
   font-size: calc(15px + 1vw);
 }
-#projecto #cardsH .card:nth-of-type(4) #descrição p {
-  text-align: justify;
+#projecto #cardsH .card:nth-of-type(4) #descrição ul {
+  list-style: none;
+}
+#projecto #cardsH .card:nth-of-type(4) #descrição ul li {
+  color: rgb(87, 87, 87);
+  font-size: 20px;
+  line-height: 1.5;
 }
 
 @media screen and (max-width: 1500px) {
+  #projecto {
+    height: 690px;
+  }
+  #projecto p {
+    padding: 0 5%;
+  }
+  #projecto #cardsH {
+    padding: 20px 5%;
+    gap: 10px;
+  }
   #projecto #cardsH .card {
-    width: 45%;
+    display: flex;
+    align-items: center;
+    background-color: #eee;
+    height: 250px;
+    width: 49%;
   }
 }
 @media screen and (max-width: 1050px) {
+  #projecto p {
+    padding: 0 2%;
+  }
   #projecto #cardsH {
     flex-flow: wrap row;
+    padding: 0 2%;
   }
   #projecto #cardsH .card {
     width: 47%;
@@ -1167,13 +1252,15 @@
 @media screen and (max-width: 912px) {
   #projecto {
     height: auto;
+    width: 100%;
   }
   #projecto #cardsH {
-    gap: 20px;
+    gap: 10px;
     flex-direction: column;
+    padding: 20px 0;
   }
   #projecto #cardsH .card {
-    width: 96%;
+    width: 97%;
     border: 1px solid #111111;
     border-radius: 0 10px 0 0;
   }
@@ -1189,7 +1276,7 @@
   }
   @keyframes identifier {
     from {
-      translate: -100vw 0;
+      translate: -100% 0;
       opacity: 0;
     }
     to {
@@ -1199,7 +1286,7 @@
   }
   @keyframes animaViewEsquerdo {
     from {
-      translate: 100vw 0;
+      translate: 100% 0;
       opacity: 0;
     }
     to {
@@ -1213,7 +1300,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   text-align: center;
   height: 200px;
   width: 100%;

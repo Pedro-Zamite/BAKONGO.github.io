@@ -20,7 +20,7 @@
         @include formatacao();
         z-index: 1;
         width: 100%;
-        height: 100px;
+        height: 80px;
         padding: 0 10%;
         position: fixed;
         background-color: $pretoNav;
@@ -165,9 +165,7 @@
 
                     &:hover {
                         background-color: $botao-menu-hamburque;
-
                         a {
-                            padding: 20px 42%;
                             color: $preto;
                         }
                     }
@@ -191,20 +189,19 @@
                     padding: 20px;
                     cursor: pointer;
                     list-style: none;
-                    background-color: $vermelhoTrans ;
+                    background-color: $cinza-claro ;
                     border-top: 3px solid $branco;
-
                     a {
-                        color: $branco;
+                        color: $preto;
                         text-decoration: none;
                         font-size: calc(25px + 1vw);
                     }
 
                     &:hover {
-                        background-color: $vermelho;
+                        transition: 2s all;
+                        background-image: linear-gradient(-45deg, $cinza, $branco,$preto, $cinza-claro, $cinza);
                         a {
-                            width: 100%;
-                            padding: 20px 35%; 
+                            color: $branco;
                         }
                     }
                 }

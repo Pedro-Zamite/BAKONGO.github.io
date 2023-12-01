@@ -61,14 +61,31 @@
             background-position: center;
             background-position-x: 300px;
             background-size: cover;
+            div{
+                h3{  
+                 display: none; 
+                }
+            }
 
             &:hover #sobreOpac {
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 width: 100%;
                 height: 100%;
                 cursor: pointer;
                 background-position-x: 300px;
                 background-color: $pretoTrans;
                 transition: .5s all;
+                div{
+                    transition: 1s all;
+                    h3 {
+                        display: block;
+                        text-transform: capitalize;
+                        text-decoration: underline;
+                        color: $branco;
+                    }
+                }
             }
         }
     }

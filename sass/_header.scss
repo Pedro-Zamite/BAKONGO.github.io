@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 850px;
+    height: 650px;
     width: 100%;
 
 // Aqui esta a formatação da opacidade das descrições e dos botões das descrições
@@ -19,34 +19,34 @@
         width: 100%;
 
         #descricao {
-            line-height: -15%;
 
-            h1 {
+            h2 {
                 color: $branco;
-                font-weight: 900;
                 text-align: center;
-                font-size: calc(60px + 1vw);
-                margin: 40px 0;
+                font-size: calc(50px + 1vw);
             }
 
             p {
-                color: $cinza;
-                padding: 0 50px;
+                padding: 50px 50px;
                 text-align: center;
-                margin-bottom: 70px;
                 font-size: calc(12px + 1vw);
+                background: linear-gradient(65deg, $branco, $cinza, $cinza-claro, $branco);
+                background-size: 400% 100%;
+
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
             }
 
             #botao {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                gap: 15px;
+                gap: 5px;
 
                 .button {
                     border: 1px solid $preto;
-        
-                    padding: 20px 40px;
+                    padding: 15px 20px;
                     border-radius: 5px;
                     cursor: pointer;
 

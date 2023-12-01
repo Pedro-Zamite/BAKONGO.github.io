@@ -1,7 +1,7 @@
 //   Inicio da formatação dos serviços
 #servicos {
-    height: 780px;
-    margin-top: 30px;
+    height: 560px;
+    margin-top: 5px;
     position: relative;
     width: 100%;
 
@@ -9,25 +9,24 @@
         font-size: calc(14px + 1vw);
         text-transform: uppercase;
         color: $azuel-escuro;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         text-align: center;
     }
 
     #hr {
         hr {
-            margin: 0 auto;
             padding: 2px;
             width: 150px;
-            margin-bottom: 40px;
+            margin: 0 auto;
             background-color: $azuel-escuro;
         }
     }
 
     #p {
-        margin-top: 40px;
+        margin-top: 25px;
         text-align: center;
         margin-bottom: 20px;
-        font-size: calc(10px + 1vw);
+        font-size: calc(8px + 1vw);
         padding: 0 10%;
         color: $cinza;
     }
@@ -40,15 +39,15 @@
 
     .modal.active {
         display: flex;
+        position: fixed;
         align-items: center;
         justify-content: center;
         background-color: $pretoTrans;
-        position: absolute;
-        padding: 40px 0;
+        padding: 20px 0 20px 0;
         cursor: pointer;
-        height: 750px;
+        height: 100vh;
         width: 100%;
-        top: -20px;
+        top: 2px;
         z-index: 1;
 
         #modal {
@@ -61,19 +60,19 @@
 
             h3 {
                 margin: 40px auto;
-                font-size: 28px;
+                font-size: 25px;
                 color: $cinza;
             }
 
             p {
                 text-align: justify;
-                font-size: 20px;
+                font-size: 18px;
                 color: $cinza;
             }
 
             #obs {
                 text-align: justify;
-                font-size: 20px;
+                font-size: 25px;
                 color: $cinza;
             }
 
@@ -93,7 +92,7 @@
 
                     p {
                         text-align: justify;
-                        font-size: 20px;
+                        font-size: 18px;
                         color: $cinza;
                     }
                 }
@@ -125,15 +124,15 @@
 
     .modal2.active {
         display: flex;
+        position: fixed;
         align-items: center;
         justify-content: center;
         background-color: $pretoTrans;
-        position: absolute;
-        padding: 40px 0;
+        padding: 20px 0 20px 0;
         cursor: pointer;
-        height: 750px;
+        height: 100vh;        
         width: 100%;
-        top: -20px;
+        top: 2px;
         z-index: 1;
 
         #modal2 {
@@ -146,19 +145,19 @@
 
             h3 {
                 margin: 40px auto;
-                font-size: 28px;
+                font-size: 25px;
                 color: $cinza;
             }
 
             p {
                 text-align: justify;
-                font-size: 20px;
+                font-size: 18px;
                 color: $cinza;
             }
 
             #obs {
                 text-align: justify;
-                font-size: 20px;
+                font-size: 25px;
                 color: $cinza;
             }
 
@@ -178,7 +177,7 @@
 
                     p {
                         text-align: justify;
-                        font-size: 20px;
+                        font-size: 18px;
                         color: $cinza;
                     }
 
@@ -211,15 +210,15 @@
 
     .modal3.active {
         display: flex;
+        position: fixed;
         align-items: center;
         justify-content: center;
         background-color: $pretoTrans;
-        position: absolute;
-        padding: 40px 0;
+        padding: 20px 0 20px 0;
         cursor: pointer;
-        height: 750px;
+        height: 100vh;
         width: 100%;
-        top: -20px;
+        top: 2px;
         z-index: 1;
 
         #modal3 {
@@ -232,19 +231,19 @@
 
             h3 {
                 margin: 40px auto;
-                font-size: 28px;
+                font-size: 25px;
                 color: $cinza;
             }
 
             p {
                 text-align: justify;
-                font-size: 20px;
+                font-size: 18px;
                 color: $cinza;
             }
 
             #obs {
                 text-align: justify;
-                font-size: 20px;
+                font-size: 25px;
                 color: $cinza;
             }
 
@@ -264,7 +263,7 @@
 
                     p {
                         text-align: justify;
-                        font-size: 20px;
+                        font-size: 18px;
                         color: $cinza;
                     }
                 }
@@ -297,7 +296,7 @@
         justify-content: center;
         padding: 0 10%;
         margin: 20px 0;
-        height: 580px;
+        height: 400px;
         width: 100%;
         gap: 20px;
 
@@ -308,14 +307,13 @@
 
             #descricao {
                 padding: 10px;
-
                 h3 {
                     left: 0;
                     margin: 20px 0;
                     font-size: calc(15px + 1vw);
+                    color: $cinza;
                     font-weight: 900;
                 }
-
                 p {
                     text-align: justify;
                     font-size: 20px;
@@ -326,7 +324,7 @@
 
         .card:nth-of-type(1) #img {
             width: 100%;
-            height: 300px;
+            height: 200px;
             background: url("../imagens/istockphoto-1325074732-612x612.jpg");
             background-repeat: no-repeat;
             background-size: cover;
@@ -373,7 +371,7 @@
 
         .card:nth-of-type(2) #img {
             width: 100%;
-            height: 300px;
+            height: 200px;
             background: url("../imagens/istockphoto-1394297245-612x612.jpg");
             background-repeat: no-repeat;
             background-size: cover;
@@ -420,7 +418,7 @@
 
         .card:nth-of-type(3) #img {
             width: 100%;
-            height: 300px;
+            height: 200px;
             background: url("../imagens/istockphoto-1345532280-612x612.jpg");
             background-repeat: no-repeat;
             background-size: cover;
@@ -480,7 +478,6 @@
         }
     }
 }
-
 @media screen and (max-width:1100px) {
     #servicos {
         width: 100%;
@@ -495,16 +492,65 @@
 
     }
 }
-
-@media screen and (max-width:770px) {
+@media screen and (max-width:1050px) {
     #servicos {
-        width: 100%;
-        #p{
+        p{
             padding: 0 2%;
         }
-        #cards{
-            width: 100%;
+
+        .modal.active { 
+            #modal {
+                width: min(90%, 80%) !important;
+            }
+        }
+        .modal2.active { 
+            #modal2 {
+                width: min(90%, 80%) !important;
+            }
+        }
+        .modal3.active { 
+            #modal3 {
+                width: min(90%, 80%) !important;
+            }
+        }
+        #cards {
             padding: 0 2%;
+            .card {
+                width: 329.5px;
+            }       
+         }
+
+    }
+}
+
+@media screen and (max-width:801px) {
+    #servicos {
+        width: 100%;
+        .modal.active { 
+            #modal {
+                width: min(98%, 88%) !important;
+            }
+        }
+        .modal2.active { 
+            #modal2 {
+                width: min(98%, 88%) !important;
+            }
+        }
+        .modal3.active { 
+            #modal3 {
+                width: min(98%, 88%) !important;
+            }
+        }
+    }
+}
+@media screen and (max-width:770px) {
+    #servicos {
+        #cards {
+            margin-left: -1%;
+            background-color: #f00;
+            width: 120% ;
+            overflow-x: scroll;
+        //    .card {    } 
         }
     }
 }
