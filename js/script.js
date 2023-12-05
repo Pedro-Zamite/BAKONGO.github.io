@@ -1,5 +1,5 @@
-import {hamburgue, menu, spread, spread2, spread3, modal, modal2, modal3, EuQuero, EuQuero2, EuQuero3, body} from "./_variaveis.js"
-
+import {hamburgue, menu, spread, spread2, spread3, modal, modal2, modal3, EuQuero, EuQuero2, EuQuero3, body} from "./_variaveis.js";
+import {radio} from "./_slideMobile.js";
 
 // Inicio da formatação do menu hamburgue
 hamburgue.addEventListener("click",()=>{
@@ -7,7 +7,6 @@ hamburgue.addEventListener("click",()=>{
     menu.classList.toggle('activeMenu');
 })
 // Fim da formatação do menu hamburgue
-
 
 
 // Aqui esta a formatação do btn EuQuero
