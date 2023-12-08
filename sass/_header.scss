@@ -1,13 +1,13 @@
 // Inicio da section header
 #header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    height: 650px;
     width: 100%;
+    display:block;
+    height: 750px;
+    overflow: hidden;
+    padding: 0 !important;
+    position: relative;
 
-// Aqui esta a formatação da opacidade das descrições e dos botões das descrições
+    // Aqui esta a formatação da opacidade das descrições e dos botões das descrições
     #opac {
         display: flex;
         align-items: center;
@@ -55,8 +55,10 @@
                         font-size: 20px;
                         color: $preto;
                     }
-                  &:nth-of-type(1) {
+
+                    &:nth-of-type(1) {
                         background-color: $azul-t-chert;
+
                         a {
                             color: #fff;
                         }
@@ -67,40 +69,83 @@
         }
     }
 
-// Aqui esta a formatação das imagens
-    #imge-slide {
-        background: url("../imagens/istockphoto-1310627676-612x612.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
+    input{
+        display: none;
+    }
+    // Aqui esta a formatação das imagenSlide
+   
+    .slideHeader{
+        display: flex;
         height: 100%;
-        width: 100%;
+        width: 400%;
+    }
+    .imge-slide {
+            transition: 1s;
+            height: 100%;
+            width: 25%;
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+    #radio4:checked~.slideHeader .primeiro {
+        margin-left: 0%;
+    }
+
+    #radio5:checked~.slideHeader .primeiro {
+        margin-left: -25%;
+    }
+
+    #radio6:checked~.slideHeader .primeiro {
+        margin-left: -50%;
     }
 }
 
-
-@media screen and (max-width:1500px){
+@media screen and (max-width:1500px) {
     #header {
         width: 100%;
-        #opac{
+
+        #opac {
             width: 100%;
             padding: 0 5%;
         }
     }
 }
-@media screen and (max-width:1050px){
+
+@media screen and (max-width:1250px) {
     #header {
-        width: 100%;
-        #opac{
-            width: 100%;
+        height: 650px !important;
+    }
+}
+
+@media screen and (max-width:1050px) {
+    #header {
+        #opac {
             padding: 0 2%;
         }
     }
 }
-@media screen and (max-width:770px){
+
+@media screen and (max-width:700px) {
     #header {
-        width: 100%;
-        #opac{
-            width: 100%;
+        #opac {
+            p {
+                padding: 50px 10px !important;
+            }
         }
+    }
+}
+
+@media screen and (max-width:700px) {
+    #header {
+        #opac {
+            #descricao {
+                h2 {
+                    font-size: calc(40px + 1vw);
+                }
+            }
+        }
+
     }
 }

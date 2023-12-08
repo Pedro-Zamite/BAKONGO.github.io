@@ -8,6 +8,7 @@
 }
 
 #logo h1 {
+  display: block;
   color: #fff;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -16,6 +17,7 @@
 }
 
 #navbar {
+  display: flex;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -149,7 +151,9 @@
     background-color: rgba(238, 238, 238, 0.7411764706);
   }
   #navbar #menu #menu-itens li:hover a {
+    width: 100%;
     color: #111111;
+    padding: 18px 350px;
   }
   #navbar #menu #menu-itens li a {
     color: #fff;
@@ -180,13 +184,14 @@
   }
   #navbar #menu #contato li:hover a {
     color: #fff;
+    padding: 20px 250px;
   }
   #navbar .activeMenu {
     right: 0% !important;
     transition: 0.5s all;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 801px) {
   #navbar {
     padding: 0 2%;
   }
@@ -195,14 +200,127 @@
     height: 65px;
     width: 65px;
   }
+  #navbar #menu #menu-itens li:hover a {
+    padding: 18px 330px;
+  }
+  #navbar #menu #contato:hover a {
+    color: #fff;
+    padding: 18px 270px;
+  }
+}
+@media screen and (max-width: 769px) {
+  #navbar #menu #menu-itens li:hover a {
+    padding: 18px 300px;
+  }
+  #navbar #menu #contato:hover a {
+    padding: 18px 260px;
+  }
+}
+@media screen and (max-width: 741px) {
+  #navbar #menu #menu-itens li:hover a {
+    padding: 18px 270px;
+  }
+  #navbar #menu #contato:hover a {
+    padding: 18px 230px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #navbar #menu #menu-itens li:hover a {
+    padding: 18px 240px;
+  }
+  #navbar #menu #contato:hover a {
+    padding: 18px 200px;
+  }
+}
+@media screen and (max-width: 631px) {
+  #navbar #menu #menu-itens li:hover a {
+    padding: 18px 225px;
+  }
+  #navbar #menu #contato:hover a {
+    padding: 18px 195px;
+  }
+}
+@media screen and (max-width: 601px) {
+  #navbar #menu #menu-itens li:hover a {
+    padding: 18px 210px;
+  }
+  #navbar #menu #contato:hover a {
+    padding: 18px 180px;
+  }
+}
+@media screen and (max-width: 551px) {
+  #navbar #menu #menu-itens li:hover a {
+    padding: 18px 190px;
+  }
+  #navbar #menu #contato:hover a {
+    padding: 18px 165px;
+  }
+}
+@media screen and (max-width: 541px) {
+  #navbar #menu #contato:hover a {
+    padding: 18px 145px;
+  }
+}
+@media screen and (max-width: 501px) {
+  #navbar #menu #menu-itens li:hover a {
+    padding: 18px 160px;
+  }
+  #navbar #menu #contato:hover a {
+    padding: 18px 125px;
+  }
+}
+@media screen and (max-width: 451px) {
+  #navbar #menu #menu-itens li:hover a {
+    padding: 18px 140px;
+  }
+  #navbar #menu #contato:hover a {
+    padding: 18px 115px;
+  }
+}
+@media screen and (max-width: 431px) {
+  #navbar #menu #menu-itens li:hover a {
+    padding: 18px 125px;
+  }
+  #navbar #menu #contato:hover a {
+    padding: 18px 100px;
+  }
+}
+@media screen and (max-width: 380px) {
+  #navbar #menu #menu-itens li:hover a {
+    padding: 18px 100px;
+  }
+  #navbar #menu #contato:hover a {
+    padding: 18px 75px;
+  }
+}
+@media screen and (max-width: 346px) {
+  #navbar #menu #menu-itens li:hover a {
+    padding: 18px 85px;
+  }
+  #navbar #menu #contato:hover a {
+    padding: 18px 60px;
+  }
+}
+@media screen and (max-width: 325px) {
+  #navbar #menu #menu-itens li:hover a {
+    padding: 18px 85px;
+  }
+  #navbar #menu #contato:hover a {
+    padding: 18px 60px !important;
+  }
+}
+@media screen and (max-width: 315px) {
+  #navbar #menu #contato:hover a {
+    padding: 18px 50px;
+  }
 }
 #header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  height: 650px;
   width: 100%;
+  display: block;
+  height: 750px;
+  overflow: hidden;
+  padding: 0 !important;
+  position: relative;
 }
 #header #opac {
   display: flex;
@@ -252,12 +370,31 @@
 #header #opac #descricao #botao .button:nth-of-type(1) a {
   color: #fff;
 }
-#header #imge-slide {
-  background: url("../imagens/istockphoto-1310627676-612x612.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+#header input {
+  display: none;
+}
+#header .slideHeader {
+  display: flex;
+  height: 100%;
+  width: 400%;
+}
+#header .imge-slide {
+  transition: 1s;
+  height: 100%;
+  width: 25%;
+}
+#header .imge-slide img {
   height: 100%;
   width: 100%;
+}
+#header #radio4:checked ~ .slideHeader .primeiro {
+  margin-left: 0%;
+}
+#header #radio5:checked ~ .slideHeader .primeiro {
+  margin-left: -25%;
+}
+#header #radio6:checked ~ .slideHeader .primeiro {
+  margin-left: -50%;
 }
 
 @media screen and (max-width: 1500px) {
@@ -269,21 +406,24 @@
     padding: 0 5%;
   }
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1250px) {
   #header {
-    width: 100%;
+    height: 650px !important;
   }
+}
+@media screen and (max-width: 1050px) {
   #header #opac {
-    width: 100%;
     padding: 0 2%;
   }
 }
-@media screen and (max-width: 770px) {
-  #header {
-    width: 100%;
+@media screen and (max-width: 700px) {
+  #header #opac p {
+    padding: 50px 10px !important;
   }
-  #header #opac {
-    width: 100%;
+}
+@media screen and (max-width: 700px) {
+  #header #opac #descricao h2 {
+    font-size: calc(40px + 1vw);
   }
 }
 #sobre {
@@ -353,15 +493,16 @@
   cursor: pointer;
   background-position-x: 300px;
   background-color: rgba(0, 0, 0, 0.6117647059);
-  transition: 0.5s all;
+  transition: 1s;
 }
 #sobre #sobre-decrition #Img-sobre:hover #sobreOpac div {
-  transition: 1s all;
+  transition: 2s;
 }
 #sobre #sobre-decrition #Img-sobre:hover #sobreOpac div h3 {
   display: block;
   text-transform: capitalize;
   text-decoration: underline;
+  font-size: 35px;
   color: #fff;
 }
 #sobre #saberMais {
@@ -523,6 +664,11 @@
     margin-top: 198px;
   }
 }
+@media screen and (max-width: 395px) {
+  #sobre #saberMais .card:not(:nth-last-child(1)) {
+    height: 300px;
+  }
+}
 @media screen and (max-width: 367px) {
   #sobre #saberMais {
     margin-top: 230px;
@@ -576,7 +722,7 @@
   }
 }
 #servicos {
-  height: 560px;
+  height: 660px;
   margin-top: 5px;
   width: 100%;
 }
@@ -617,7 +763,7 @@
   top: 2px;
   z-index: 1;
 }
-#servicos .modal.active #modal {
+#servicos .modal.active .modal-header {
   background-color: #fff;
   width: 70%;
   overflow: scroll;
@@ -625,40 +771,40 @@
   padding: 10px;
   height: 100%;
 }
-#servicos .modal.active #modal h3 {
+#servicos .modal.active .modal-header h3 {
   margin: 40px auto;
   font-size: 25px;
   color: rgb(87, 87, 87);
 }
-#servicos .modal.active #modal p {
+#servicos .modal.active .modal-header p {
   text-align: justify;
   font-size: 18px;
   color: rgb(87, 87, 87);
 }
-#servicos .modal.active #modal #obs {
+#servicos .modal.active .modal-header #obs {
   text-align: justify;
   font-size: 25px;
   color: rgb(87, 87, 87);
 }
-#servicos .modal.active #modal #bodyServico {
+#servicos .modal.active .modal-header .bodyServico {
   border: 2px solid rgb(87, 87, 87);
   width: 100%;
   height: auto;
 }
-#servicos .modal.active #modal #bodyServico .detalheModal {
+#servicos .modal.active .modal-header .bodyServico .detalheModal {
   padding: 5px 10px;
 }
-#servicos .modal.active #modal #bodyServico .detalheModal h3 {
+#servicos .modal.active .modal-header .bodyServico .detalheModal h3 {
   margin: 10px auto;
   font-size: 25px;
   color: rgb(87, 87, 87);
 }
-#servicos .modal.active #modal #bodyServico .detalheModal p {
+#servicos .modal.active .modal-header .bodyServico .detalheModal p {
   text-align: justify;
   font-size: 18px;
   color: rgb(87, 87, 87);
 }
-#servicos .modal.active #modal #bodyServico #euQuero {
+#servicos .modal.active .modal-header .bodyServico .EuQuero {
   padding: 10px 20px;
   background-color: rgb(87, 87, 87);
   border: 1px solid #eee;
@@ -669,7 +815,7 @@
   font-size: 19px;
   color: #fff;
 }
-#servicos .modal.active #modal #bodyServico #euQuero:hover {
+#servicos .modal.active .modal-header .bodyServico .EuQuero:hover {
   background-color: #fff;
   border-color: rgb(87, 87, 87);
   color: #111111;
@@ -830,7 +976,7 @@
   width: 100%;
   gap: 20px;
 }
-#servicos #cards #slide {
+#servicos #cards .slide {
   display: none;
 }
 #servicos #cards .card {
@@ -868,7 +1014,7 @@
   transition: 5s all;
   cursor: pointer;
 }
-#servicos #cards .card:nth-of-type(1) #spread {
+#servicos #cards .card:nth-of-type(1) .spread {
   width: 40px;
   height: 40px;
   display: flex;
@@ -887,7 +1033,7 @@
   float: right;
   z-index: 5;
 }
-#servicos #cards .card:nth-of-type(1) #spread:hover {
+#servicos #cards .card:nth-of-type(1) .spread:hover {
   background: linear-gradient(-45deg, #025, #fff, rgb(87, 87, 87));
   transform: rotate(150deg);
   color: #025;
@@ -982,6 +1128,59 @@
 #servicos #slide {
   display: none;
 }
+#servicos .modal-paleta {
+  display: none;
+}
+#servicos .modal-paleta.activePaleta {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6117647059);
+  padding: 20px 0 20px 0;
+  cursor: pointer;
+  height: 99.9vh;
+  width: 100%;
+  top: 2px;
+  z-index: 1;
+}
+#servicos .modal-paleta.activePaleta .subModal-Palete {
+  text-align: start;
+  height: 50%;
+  width: 80%;
+  margin-top: 65px;
+  background-color: #eee;
+  box-shadow: 1px 3px 8px rgb(87, 87, 87);
+}
+#servicos .paletas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  height: 60px;
+  width: 100%;
+}
+#servicos .paletas .paleta-precario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 100%;
+}
+#servicos .paletas .paleta-precario .btn-paleta {
+  background-color: #083b6d;
+  border: 1px solid rgba(0, 0, 0, 0.6117647059);
+  border-radius: 5px;
+  transition: 0.5s;
+  height: 100%;
+  width: 100%;
+}
+#servicos .paletas .paleta-precario .btn-paleta h3 {
+  color: #fff;
+  font-size: 20px;
+}
+#servicos .paletas .paleta-precario .btn-paleta:hover {
+  background: #025;
+}
 
 @media screen and (max-width: 1500px) {
   #servicos {
@@ -1032,7 +1231,7 @@
   #servicos {
     width: 100%;
   }
-  #servicos .modal.active #modal {
+  #servicos .modal.active .modal-header {
     width: 88% !important;
   }
   #servicos .modal2.active #modal2 {
@@ -1044,7 +1243,6 @@
 }
 @media screen and (max-width: 835px) {
   #servicos {
-    height: 540px;
     overflow: hidden;
   }
   #servicos #cards {
@@ -1055,7 +1253,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 77%;
+    height: 400px;
     width: 150%;
   }
   #servicos #slide input {
@@ -1076,7 +1274,7 @@
     background-color: #eee;
     transition: 0.5s all;
   }
-  #servicos #slide .cardslide .card .spread {
+  #servicos #slide .cardslide .card .spread4, #servicos #slide .cardslide .card .spread5, #servicos #slide .cardslide .card .spread6 {
     width: 40px;
     height: 40px;
     display: flex;
@@ -1179,9 +1377,6 @@
   }
 }
 @media screen and (max-width: 581px) {
-  #servicos #slide {
-    height: 70%;
-  }
   #servicos #slide .cardslide {
     width: 200%;
   }
@@ -1204,9 +1399,6 @@
   }
 }
 @media screen and (max-width: 551px) {
-  #servicos #slide {
-    height: 70%;
-  }
   #servicos #slide .cardslide {
     width: 500% !important;
   }
@@ -1224,32 +1416,7 @@
   }
 }
 @media screen and (max-width: 529px) {
-  #servicos #slide {
-    height: 70%;
-  }
   #servicos #slide .cardslide {
-    gap: 10px;
-    width: 500% !important;
-  }
-  #servicos #slide .cardslide .card:nth-of-type(1), #servicos #slide .cardslide .card:nth-of-type(3) {
-    width: 500px !important;
-  }
-  #servicos #slide #radio1:checked ~ .cardslide .primeiro {
-    margin-left: 720px !important;
-  }
-  #servicos #slide #radio2:checked ~ .cardslide .primeiro {
-    margin-left: -430px;
-  }
-  #servicos #slide #radio3:checked ~ .cardslide .primeiro {
-    margin-left: -1230px !important;
-  }
-}
-@media screen and (max-width: 529px) {
-  #servicos #slide {
-    height: 70%;
-  }
-  #servicos #slide .cardslide {
-    gap: 10px;
     width: 500% !important;
   }
   #servicos #slide .cardslide .card:nth-of-type(1), #servicos #slide .cardslide .card:nth-of-type(3) {
@@ -1269,33 +1436,6 @@
   }
 }
 @media screen and (max-width: 498px) {
-  #servicos #slide {
-    height: 70%;
-  }
-  #servicos #slide .cardslide {
-    gap: 10px;
-    width: 500% !important;
-  }
-  #servicos #slide .cardslide .card:nth-of-type(1), #servicos #slide .cardslide .card:nth-of-type(3) {
-    width: 475px !important;
-  }
-  #servicos #slide .cardslide .card:nth-of-type(2) {
-    width: 480px !important;
-  }
-  #servicos #slide #radio1:checked ~ .cardslide .primeiro {
-    margin-left: 731px !important;
-  }
-  #servicos #slide #radio2:checked ~ .cardslide .primeiro {
-    margin-left: -240px !important;
-  }
-  #servicos #slide #radio3:checked ~ .cardslide .primeiro {
-    margin-left: -1215px !important;
-  }
-}
-@media screen and (max-width: 498px) {
-  #servicos #slide {
-    height: 70%;
-  }
   #servicos #slide .cardslide {
     gap: 10px;
     width: 500% !important;
@@ -1317,9 +1457,6 @@
   }
 }
 @media screen and (max-width: 466px) {
-  #servicos #slide {
-    height: 70%;
-  }
   #servicos #slide .cardslide {
     gap: 10px;
     width: 500% !important;
@@ -1341,9 +1478,6 @@
   }
 }
 @media screen and (max-width: 448px) {
-  #servicos #slide {
-    height: 70%;
-  }
   #servicos #slide .cardslide {
     gap: 10px;
     width: 500% !important;
@@ -1364,34 +1498,7 @@
     margin-left: -1088px !important;
   }
 }
-@media screen and (max-width: 448px) {
-  #servicos #slide {
-    height: 70%;
-  }
-  #servicos #slide .cardslide {
-    gap: 10px;
-    width: 500% !important;
-  }
-  #servicos #slide .cardslide .card:nth-of-type(1), #servicos #slide .cardslide .card:nth-of-type(3) {
-    width: 401px !important;
-  }
-  #servicos #slide .cardslide .card:nth-of-type(2) {
-    width: 401px !important;
-  }
-  #servicos #slide #radio1:checked ~ .cardslide .primeiro {
-    margin-left: 615px !important;
-  }
-  #servicos #slide #radio2:checked ~ .cardslide .primeiro {
-    margin-left: -210px !important;
-  }
-  #servicos #slide #radio3:checked ~ .cardslide .primeiro {
-    margin-left: -1030px !important;
-  }
-}
 @media screen and (max-width: 400px) {
-  #servicos #slide {
-    height: 70%;
-  }
   #servicos #slide .cardslide {
     width: 500% !important;
   }
@@ -1412,9 +1519,6 @@
   }
 }
 @media screen and (max-width: 394px) {
-  #servicos #slide {
-    height: 70%;
-  }
   #servicos #slide .cardslide {
     width: 500% !important;
   }
@@ -1435,9 +1539,6 @@
   }
 }
 @media screen and (max-width: 376px) {
-  #servicos #slide {
-    height: 70%;
-  }
   #servicos #slide .cardslide {
     width: 500% !important;
   }
@@ -1458,9 +1559,6 @@
   }
 }
 @media screen and (max-width: 360px) {
-  #servicos #slide {
-    height: 70%;
-  }
   #servicos #slide .cardslide {
     width: 500% !important;
   }
@@ -1481,9 +1579,6 @@
   }
 }
 @media screen and (max-width: 345px) {
-  #servicos #slide {
-    height: 75%;
-  }
   #servicos #slide .cardslide {
     width: 500% !important;
   }
@@ -1504,9 +1599,6 @@
   }
 }
 @media screen and (max-width: 326px) and (min-width: 313px) {
-  #servicos #slide {
-    height: 75%;
-  }
   #servicos #slide .cardslide {
     width: 500% !important;
   }
@@ -1530,9 +1622,6 @@
   }
 }
 @media screen and (max-width: 312px) {
-  #servicos #slide {
-    height: 75%;
-  }
   #servicos #slide .cardslide {
     width: 500% !important;
   }

@@ -1,6 +1,6 @@
 //   Inicio da formatação dos serviços
 #servicos {
-    height: 560px;
+    height: 660px;
     margin-top: 5px;
     width: 100%;
 
@@ -49,7 +49,7 @@
         top: 2px;
         z-index: 1;
 
-        #modal {
+        .modal-header {
             background-color: $branco;
             width: min(80%, 70%);
             overflow: scroll;
@@ -75,7 +75,7 @@
                 color: $cinza;
             }
 
-            #bodyServico {
+            .bodyServico {
                 border: 2px solid $cinza;
                 width: 100%;
                 height: auto;
@@ -96,7 +96,7 @@
                     }
                 }
 
-                #euQuero {
+                .EuQuero {
                     padding: 10px 20px;
                     background-color: $cinza;
                     border: 1px solid $cinza-claro;
@@ -299,7 +299,7 @@
         width: 100%;
         gap: 20px;
 
-        #slide {
+        .slide {
             display: none;
         }
 
@@ -345,7 +345,7 @@
 
         }
 
-        .card:nth-of-type(1) #spread {
+        .card:nth-of-type(1) .spread {
             width: 40px;
             height: 40px;
             display: flex;
@@ -472,6 +472,61 @@
     #slide {
         display: none;
     }
+
+    .modal-paleta{
+        display: none;
+    }
+    .modal-paleta.activePaleta{
+        display: flex;
+        position: fixed;
+        justify-content: center;
+        background-color: $pretoTrans;
+        padding: 20px 0 20px 0;
+        cursor: pointer;
+        height: 99.9vh;
+        width: 100%;
+        top: 2px;
+        z-index: 1;
+        .subModal-Palete{
+            text-align: start;
+            height:50%;
+            width: 80%;
+            margin-top: 65px;
+            background-color:$cinza-claro;
+            box-shadow: 1px 3px 8px $cinza;
+        }
+    }
+    .paletas{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        height: 60px;
+        width: 100%;
+        .paleta-precario{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 270px;
+            height: 100%;
+            
+            .btn-paleta{
+            background-color: $azul-t-chert;
+            border: 1px solid $pretoTrans;
+            border-radius: 5px;
+            transition: .5s;
+            height: 100%;
+            width: 100%;
+            h3{
+                color: $branco;
+                font-size: 20px;
+            }
+            &:hover{
+                background: $azuel-escuro;
+            }
+            }
+        }
+    }
 }
 
 @media screen and (max-width:1500px) {
@@ -543,7 +598,7 @@
         width: 100%;
 
         .modal.active {
-            #modal {
+            .modal-header {
                 width: min(98%, 88%) !important;
             }
         }
@@ -563,7 +618,6 @@
 }
 @media screen and (max-width:835px) {
     #servicos {
-        height: 540px;  
         overflow: hidden;
         #cards {
             display: none;
@@ -573,7 +627,7 @@
             align-items: center;
             justify-content: center;
             position: relative;
-            height: 77%;
+            height: 400px;
             width: 150%;
                
             input{
@@ -594,7 +648,7 @@
                 background-color: $cinza-claro;
                 transition: .5s all;
 
-                .spread {
+                .spread4, .spread5, .spread6 {
                     width: 40px;
                     height: 40px;
                     display: flex;
@@ -723,7 +777,6 @@
 @media screen and (max-width:581px) {
     #servicos {
         #slide {
-            height: 70%;
             .cardslide {
                 width: 200%;
                 .card {
@@ -750,10 +803,9 @@
       
     }
 }
-@media screen and (max-width:551px) {
+@media screen and (max-width:551px) {   
     #servicos {
         #slide {
-            height: 70%;
             .cardslide {
                 width: 500% !important;
                 .card:nth-of-type(1), .card:nth-of-type(3){
@@ -775,32 +827,7 @@
 @media screen and (max-width:529px) {
     #servicos {
         #slide {
-            height: 70%;
             .cardslide {
-                gap: 10px;
-                width: 500% !important;
-                .card:nth-of-type(1), .card:nth-of-type(3){
-                    width: 500px !important;
-                }
-            }
-            #radio1:checked ~ .cardslide .primeiro{     
-                margin-left: 720px !important;
-            }
-            #radio2:checked ~ .cardslide .primeiro{
-                margin-left: -430px;
-            }
-            #radio3:checked ~ .cardslide .primeiro{
-                margin-left: -1230px !important;
-            }
-        }
-    }        
-}
-@media screen and (max-width:529px) {
-    #servicos {
-        #slide {
-            height: 70%;
-            .cardslide {
-                gap: 10px;
                 width: 500% !important;
                 .card:nth-of-type(1), .card:nth-of-type(3) {
                     width: 485px !important;
@@ -824,32 +851,6 @@
 @media screen and (max-width:498px) {
     #servicos {
         #slide {
-            height: 70%;
-            .cardslide {
-                gap: 10px;
-                width: 500% !important;
-                .card:nth-of-type(1), .card:nth-of-type(3) {
-                    width: 475px !important;                }
-                .card:nth-of-type(2){
-                    width: 480px !important;
-                }
-            }
-            #radio1:checked ~ .cardslide .primeiro{     
-                margin-left: 731px !important;
-            }
-            #radio2:checked ~ .cardslide .primeiro{
-                margin-left: -240px !important;
-            }
-            #radio3:checked ~ .cardslide .primeiro{
-                margin-left: -1215px !important;
-            }
-        }
-    }        
-}
-@media screen and (max-width:498px) {
-    #servicos {
-        #slide {
-            height: 70%;
             .cardslide {
                 gap: 10px;
                 width: 500% !important;
@@ -875,7 +876,6 @@
 @media screen and (max-width:466px) {
     #servicos {
         #slide {
-            height: 70%;
             .cardslide {
                 gap: 10px;
                 width: 500% !important;
@@ -901,7 +901,6 @@
 @media screen and (max-width:448px) {
     #servicos {
         #slide {
-            height: 70%;
             .cardslide {
                 gap: 10px;
                 width: 500% !important;
@@ -924,36 +923,9 @@
         }
     }        
 }
-@media screen and (max-width:448px) {
-    #servicos {
-        #slide {
-            height: 70%;
-            .cardslide {
-                gap: 10px;
-                width: 500% !important;
-                .card:nth-of-type(1), .card:nth-of-type(3) {
-                    width: 401px !important; 
-                }
-                .card:nth-of-type(2){
-                    width: 401px !important;
-                }
-            }
-            #radio1:checked ~ .cardslide .primeiro{     
-                margin-left: 615px !important;
-            }
-            #radio2:checked ~ .cardslide .primeiro{
-                margin-left: -210px !important;
-            }
-            #radio3:checked ~ .cardslide .primeiro{
-                margin-left: -1030px !important;
-            }
-        }
-    }        
-}
 @media screen and (max-width:400px) {
     #servicos {
         #slide {
-            height: 70%;
             .cardslide {
                 width: 500% !important;
                 .card:nth-of-type(1), .card:nth-of-type(3) {
@@ -978,7 +950,6 @@
 @media screen and (max-width:394px) {
     #servicos {
         #slide {
-            height: 70%;
             .cardslide {
                 width: 500% !important;
                 .card:nth-of-type(1), .card:nth-of-type(3) {
@@ -1003,7 +974,6 @@
 @media screen and (max-width:376px) {
     #servicos {
         #slide {
-            height: 70%;
             .cardslide {
                 width: 500% !important;
                 .card:nth-of-type(1), .card:nth-of-type(3) {
@@ -1025,7 +995,7 @@
         }
     }        
 }
-//! @media screen and (max-width:370px) {
+// ! @media screen and (max-width:370px) {
 //     #servicos {
 //         #slide {
 //             height: 70%;
@@ -1054,7 +1024,6 @@
 @media screen and (max-width:360px) {
     #servicos {
         #slide {
-            height: 70%;
             .cardslide {
                 width: 500% !important;
                 .card:nth-of-type(1), .card:nth-of-type(3) {
@@ -1079,7 +1048,6 @@
 @media screen and (max-width:345px) {
     #servicos {
         #slide {
-            height: 75%;
             .cardslide {
                 width: 500% !important;
                 .card:nth-of-type(1), .card:nth-of-type(3) {
@@ -1105,7 +1073,6 @@
     #servicos {
 
         #slide {
-            height: 75%;
             .cardslide {
                 width: 500% !important;
                 .card {
@@ -1133,7 +1100,6 @@
 @media screen and (max-width:312px) {
     #servicos {
         #slide {
-            height: 75%;
             .cardslide {
                 width: 500% !important;
                 .card:nth-of-type(1), .card:nth-of-type(3) {

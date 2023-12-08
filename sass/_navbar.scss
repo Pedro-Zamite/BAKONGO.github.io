@@ -7,6 +7,7 @@
 
 // Inicio da formação do logo
 #logo h1 {
+    display: block;
     color: $branco;
     user-select: none;
     font-size: calc(15px + 1vw);
@@ -17,6 +18,7 @@
 
     // Inicio da formação dos Elementos da nav
     #navbar {
+        display: flex;
         @include formatacao();
         z-index: 1;
         width: 100%;
@@ -162,11 +164,13 @@
                     color: $branco;
                     padding: 20px 0;
                     width: 100%;
-
+                    
                     &:hover {
                         background-color: $botao-menu-hamburque;
                         a {
+                            width: 100%;
                             color: $preto;
+                            padding: 18px 350px;
                         }
                     }
 
@@ -202,6 +206,7 @@
                         background-image: linear-gradient(-45deg, $cinza, $branco,$preto, $cinza-claro, $cinza);
                         a {
                             color: $branco;
+                            padding: 20px 250px;
                         }
                     }
                 }
@@ -215,7 +220,7 @@
 
     }
     }
-    @media screen and (max-width:800px){
+    @media screen and (max-width:801px){
         #navbar {
             padding: 0 2%;
             #hamburgue {
@@ -223,6 +228,330 @@
                 height: 65px;
                 width: 65px;    
             }
+            #menu {
+                #menu-itens {    
+                    li {                        
+                        &:hover {
+                            a {
+                                padding: 18px 330px;
+                            }
+                        }
+                    }
+                }
+    
+                #contato {
+                        &:hover {
+                            a {
+                                color: $branco;
+                                padding: 18px 270px;
+                            }
+                        }
+                    }
+                }
+        }
+    }
+    @media screen and (max-width:769px){
+        #navbar {
+            #menu {
+                #menu-itens {    
+                    li {                        
+                        &:hover {
+                            a {
+                                padding: 18px 300px;
+                            }
+                        }
+                    }
+                }
+    
+                #contato {
+                        &:hover {
+                            a {
+                                padding: 18px 260px;
+                            }
+                        }
+                    }
+                }
+        }
+    }
+    @media screen and (max-width:741px){
+        #navbar {
+            #menu {
+                #menu-itens {    
+                    li {                        
+                        &:hover {
+                            a {
+                                padding: 18px 270px;
+                            }
+                        }
+                    }
+                }
+    
+                #contato {
+                        &:hover {
+                            a {
+                                padding: 18px 230px;
+                            }
+                        }
+                    }
+                }
+        }
+    }
+    @media screen and (max-width:700px){
+        #navbar {
+            #menu {
+                #menu-itens {    
+                    li {                        
+                        &:hover {
+                            a {
+                                padding: 18px 240px;
+                            }
+                        }
+                    }
+                }
+    
+                #contato {
+                        &:hover {
+                            a {
+                                padding: 18px 200px;
+                            }
+                        }
+                    }
+                }
+        }
+    }
+    @media screen and (max-width:631px){
+        #navbar {
+            #menu {
+                #menu-itens {    
+                    li {                        
+                        &:hover {
+                            a {
+                                padding: 18px 225px;
+                            }
+                        }
+                    }
+                }
+    
+                #contato {
+                        &:hover {
+                            a {
+                                padding: 18px 195px;
+                            }
+                        }
+                    }
+                }
+        }
+    }
+    @media screen and (max-width:601px){
+        #navbar {
+            #menu {
+                #menu-itens {    
+                    li {                        
+                        &:hover {
+                            a {
+                                padding: 18px 210px;
+                            }
+                        }
+                    }
+                }
+    
+                #contato {
+                        &:hover {
+                            a {
+                                padding: 18px 180px;
+                            }
+                        }
+                    }
+                }
+        }
+    }
+    @media screen and (max-width:551px){
+        #navbar {
+            #menu {
+                #menu-itens {    
+                    li {                        
+                        &:hover {
+                            a {
+                                padding: 18px 190px;
+                            }
+                        }
+                    }
+                }
+    
+                #contato {
+                        &:hover {
+                            a {
+                                padding: 18px 165px;
+                            }
+                        }
+                    }
+                }
+        }
+    }
+    @media screen and (max-width:541px){
+        #navbar {
+            #menu {    
+                #contato {
+                        &:hover {
+                            a {
+                                padding: 18px 145px;
+                            }
+                        }
+                    }
+                }
+        }
+    }
+    @media screen and (max-width:501px){
+        #navbar {
+            #menu {
+                #menu-itens {    
+                    li {                        
+                        &:hover {
+                            a {
+                                padding: 18px 160px;
+                            }
+                        }
+                    }
+                }
+    
+                #contato {
+                        &:hover {
+                            a {
+                                padding: 18px 125px;
+                            }
+                        }
+                    }
+                }
+        }
+    }
+    @media screen and (max-width:451px){
+        #navbar {
+            #menu {
+                #menu-itens {    
+                    li {                        
+                        &:hover {
+                            a {
+                                padding: 18px 140px;
+                            }
+                        }
+                    }
+                }
+    
+                #contato {
+                        &:hover {
+                            a {
+                                padding: 18px 115px;
+                            }
+                        }
+                    }
+                }
+        }
+    }
+    @media screen and (max-width:431px){
+        #navbar {
+            #menu {
+                #menu-itens {    
+                    li {                        
+                        &:hover {
+                            a {
+                                padding: 18px 125px;
+                            }
+                        }
+                    }
+                }
+    
+                #contato {
+                        &:hover {
+                            a {
+                                padding: 18px 100px;
+                            }
+                        }
+                    }
+                }
+        }
+    }
+    @media screen and (max-width:380px){
+        #navbar {
+            #menu {
+                #menu-itens {    
+                    li {                        
+                        &:hover {
+                            a {
+                                padding: 18px 100px;
+                            }
+                        }
+                    }
+                }
+    
+                #contato {
+                        &:hover {
+                            a {
+                                padding: 18px 75px;
+
+                            }
+                        }
+                    }
+                }
+        }
+    }
+    @media screen and (max-width:346px){
+        #navbar {
+            #menu {
+                #menu-itens {    
+                    li {                        
+                        &:hover {
+                            a {
+                                padding: 18px 85px;       
+                             }
+                        }
+                    }
+                }
+    
+                #contato {
+                        &:hover {
+                            a {
+                                padding: 18px 60px;
+                            }
+                        }
+                    }
+                }
+        }
+    }
+    @media screen and (max-width:325px){
+        #navbar {
+            #menu {
+                #menu-itens {    
+                    li {                        
+                        &:hover {
+                            a {
+                                padding: 18px 85px;       
+                             }
+                        }
+                    }
+                }
+    
+                #contato {
+                        &:hover {
+                            a {
+                                padding: 18px 60px !important;
+                            }
+                        }
+                    }
+                }
+        }
+    }
+    @media screen and (max-width:315px){
+        #navbar {
+            #menu {    
+                #contato {
+                        &:hover {
+                            a {
+                                padding: 18px 50px;
+
+                            }
+                        }
+                    }
+                }
         }
     }
 

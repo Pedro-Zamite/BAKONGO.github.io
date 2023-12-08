@@ -1,5 +1,4 @@
 // Inicio da section sobre
-
 #sobre {
     text-transform: uppercase;
     display: inline-block;
@@ -76,13 +75,14 @@
                 cursor: pointer;
                 background-position-x: 300px;
                 background-color: $pretoTrans;
-                transition: .5s all;
+                transition: 1s;
                 div{
-                    transition: 1s all;
+                    transition: 2s;
                     h3 {
                         display: block;
                         text-transform: capitalize;
                         text-decoration: underline;
+                        font-size: 35px;
                         color: $branco;
                     }
                 }
@@ -297,6 +297,17 @@
     #sobre{
         #saberMais {
             margin-top: 198px;
+              }
+    }
+}
+@media screen and (max-width:395px) {
+    #sobre{
+        #saberMais {
+            .card {
+                &:not(:nth-last-child(1)) {
+                   height: 300px;
+                }
+            }
               }
     }
 }
