@@ -138,7 +138,43 @@
         }
     }
 }
-
+@media screen and (min-width:1250px) {
+    #sobre {
+        height: 760px !important;
+        margin-bottom: 0 !important;
+        #hr {
+            hr {
+                margin-bottom: 25px !important;
+            }
+        }
+        #sobre-decrition {   
+            #Img-sobre {
+                background-position-x: 300px;
+                background-position-y: -180px;
+            }
+        }
+        #saberMais {
+            margin-top: 50px;
+            height: 30% !important;
+        }
+    }
+}
+@media screen and (max-width:1249.9px) and (min-width:915px) {
+    #sobre {
+        height: 600px !important;
+        margin-bottom: 0 !important;
+        #sobre-decrition {  
+            height: 42%; 
+            #Img-sobre {
+                background-position-y: -120px;
+            }
+        }
+        #saberMais {
+            margin-top: 20px;
+            height: 35.7% !important;
+        }
+    }
+}
 @media screen and (max-width:1500px) {
     #sobre {
         height: 625px;

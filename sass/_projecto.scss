@@ -12,22 +12,25 @@
         margin-bottom: 10px;
         text-align: center;
     }
+
     #hr {
         hr {
             margin: 0 auto;
             padding: 2px;
-            width: 150px; 
+            width: 150px;
             margin-bottom: 20px;
             background-color: $azuel-escuro;
         }
     }
-        p {
-            font-size: calc(8px + 1vw);
-            text-align: center;
-            margin: 20px 0;
-            padding: 0 10%;
-            color: $cinza;
-        }
+
+    p {
+        font-size: calc(8px + 1vw);
+        text-align: center;
+        margin: 20px 0;
+        padding: 0 10%;
+        color: $cinza;
+    }
+
     // Aqui esta a formatação dos cards Horizontal da section serviços
     #cardsH {
         display: flex;
@@ -39,213 +42,254 @@
         margin: 20px 0;
         width: 100%;
         gap: 20px;
-// Aqui esta á formatação dos cards
+
+        // Aqui esta á formatação dos cards
         .card {
             display: flex;
             align-items: center;
             background-color: $cinza-claro;
             height: 250px;
             width: 48.5%;
-            
-          &:nth-of-type(1)  #foto{
-            width: 40%;
-            height: 100%;
-            background: url("../imagens/cardsHorizontal/MONITOR\ PORTATIL\ ASUS\ LED\ 15.6.webp");
-            background-repeat: no-repeat;
-            background-size: cover;
-            }
-            &:nth-of-type(1) #descrição{
-            width: 60%;
-            height: 100%;
-            padding: 0 10px;
-            padding-top: 10px;
-            justify-content: center;
-            align-items: center;
-            display: block;
-            h3 {
-                left: 0;
-                color:$cinza;
-                font-weight: 900;
-                margin:5px 0 20px 0;
-                font-size: calc(15px + 1vw);
+
+            &:nth-of-type(1) #foto {
+                width: 40%;
+                height: 100%;
+                background: url("../imagens/cardsHorizontal/MONITOR\ PORTATIL\ ASUS\ LED\ 15.6.webp");
+                background-repeat: no-repeat;
+                background-size: cover;
             }
 
-            ul {
-                list-style: none;
-                li{
+            &:nth-of-type(1) #descrição {
+                width: 60%;
+                height: 100%;
+                padding: 0 10px;
+                padding-top: 10px;
+                justify-content: center;
+                align-items: center;
+                display: block;
+                line-height: 2;
+
+                h3 {
+                    left: 0;
                     color: $cinza;
-                    font-size: 20px;
-                    line-height: 1.5;
+                    font-weight: 900;
+                    margin: 5px 0 20px 0;
+                    font-size: calc(15px + 1vw);
                 }
-            }
-            }
-          &:nth-of-type(2)  #foto{
-            width: 40%;
-            height: 100%;
-            background: url("../imagens/cardsHorizontal/PC\ ITX\ GAMER\ ARENA\ SETUP\ AMD\ ATHLON\ 3000G\ RX\ 550\ 4GB\ 8GB\ RAM\ SSD\ 240GB.webp");
-            background-position-x: -40px;
-            background-repeat: no-repeat;
-            background-size: cover;
-            }
-            &:nth-of-type(2) #descrição{
-            width: 60%;
-            height: 100%;
-            padding: 0 10px;
-            padding-top: 10px;
-            justify-content: center;
-            align-items: center;
-            display: block;
-            h3 {
-                left: 0;
-                color:$cinza;
-                font-weight: 900;
-                margin:5px 0 20px 0;
-                font-size: calc(15px + 1vw);
+
+                ul {
+                    list-style: none;
+
+                    li {
+                        color: $cinza;
+                        font-size: 20px;
+                        line-height: 2;
+                    }
+                }
             }
 
-            ul {
-                list-style: none;  
-                li{
-                    color: $cinza;
-                    font-size: 20px;
-                    line-height: 1.5;
-                }
-            }
-            }
-          &:nth-of-type(3)  #foto{
-            width: 40%;
-            height: 100%;
-            background: url("../imagens/cardsHorizontal/pngegg\ \(2\).png");
-            background-color: $branco;
-            background-repeat: no-repeat;
-            background-size: cover;
-            }
-            &:nth-of-type(3) #descrição{
-            width: 60%;
-            height: 100%;
-            padding: 0 10px;
-            padding-top: 10px;
-            justify-content: center;
-            align-items: center;
-            display: block;
-            h3 {
-                left: 0;
-                color:$cinza;
-                font-weight: 900;
-                margin:5px 0 20px 0;
-                font-size: calc(15px + 1vw);
+            &:nth-of-type(2) #foto {
+                width: 40%;
+                height: 100%;
+                background: url("../imagens/cardsHorizontal/PC\ ITX\ GAMER\ ARENA\ SETUP\ AMD\ ATHLON\ 3000G\ RX\ 550\ 4GB\ 8GB\ RAM\ SSD\ 240GB.webp");
+                background-position-x: -40px;
+                background-repeat: no-repeat;
+                background-size: cover;
             }
 
-            ul {
-                list-style: none;
-                li{
+            &:nth-of-type(2) #descrição {
+                width: 60%;
+                height: 100%;
+                padding: 0 10px;
+                padding-top: 10px;
+                justify-content: center;
+                align-items: center;
+                display: block;
+                line-height: 2;
+
+                h3 {
+                    left: 0;
                     color: $cinza;
-                    font-size: 20px;
-                    line-height: 1.5;
+                    font-weight: 900;
+                    margin: 5px 0 20px 0;
+                    font-size: calc(15px + 1vw);
                 }
-            }
-            }
-          &:nth-of-type(4)  #foto{
-            width: 40%;
-            height: 100%;
-            background: url("../imagens/cardsHorizontal/pedro.png");
-            background-repeat: no-repeat;
-            background-position:center ;
-            background-position-x:-35px;
-            background-size: cover;
-            }
-            &:nth-of-type(4) #descrição{
-            width: 60%;
-            height: 100%;
-            padding: 0 10px;
-            padding-top: 10px;
-            justify-content: center;
-            align-items: center;
-            display: block;
-            h3 {
-                left: 0;
-                color:$cinza;
-                font-weight: 900;
-                margin:5px 0 20px 0;
-                font-size: calc(15px + 1vw);
+
+                ul {
+                    list-style: none;
+
+                    li {
+                        color: $cinza;
+                        font-size: 20px;
+                        line-height: 2;
+                    }
+                }
             }
 
-            ul {
-                list-style: none;
-                li{
+            &:nth-of-type(3) #foto {
+                width: 40%;
+                height: 100%;
+                background: url("../imagens/cardsHorizontal/pngegg\ \(2\).png");
+                background-color: $branco;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            &:nth-of-type(3) #descrição {
+                width: 60%;
+                height: 100%;
+                padding: 0 10px;
+                padding-top: 10px;
+                justify-content: center;
+                align-items: center;
+                display: block;
+                line-height: 2;
+
+                h3 {
+                    left: 0;
                     color: $cinza;
-                    font-size: 20px;
-                    line-height: 1.5;
+                    font-weight: 900;
+                    margin: 5px 0 20px 0;
+                    font-size: calc(15px + 1vw);
+                }
+
+                ul {
+                    list-style: none;
+
+                    // margin-top: 2px;
+                    li {
+                        color: $cinza;
+                        font-size: 20px;
+                        line-height: 2;
+                    }
                 }
             }
+
+            &:nth-of-type(4) #foto {
+                width: 40%;
+                height: 100%;
+                background: url("../imagens/cardsHorizontal/pedro.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-position-x: -35px;
+                background-size: cover;
+            }
+
+            &:nth-of-type(4) #descrição {
+                width: 60%;
+                height: 100%;
+                padding: 0 10px;
+                padding-top: 10px;
+                justify-content: center;
+                align-items: center;
+                line-height: 2;
+                display: block;
+
+                h3 {
+                    left: 0;
+                    color: $cinza;
+                    font-weight: 900;
+                    margin: 5px 0 20px 0;
+                    font-size: calc(15px + 1vw);
+                }
+
+                ul {
+                    list-style: none;
+
+                    // margin-top: 10px;
+                    li {
+                        color: $cinza;
+                        font-size: 20px;
+                        line-height: 2;
+                    }
+                }
             }
         }
     }
 }
 
 @media screen and (max-width:1500px) {
-    #projecto{
+    #projecto {
         height: 690px;
-        p{
+
+        p {
             padding: 0 5%;
         }
+
         #cardsH {
             padding: 20px 5%;
             gap: 10px;
+
             .card {
                 display: flex;
                 align-items: center;
                 background-color: $cinza-claro;
                 height: 250px;
                 width: 49%;
-          }
+            }
         }
     }
 }
 
 @media screen and (max-width:1050px) {
-    #projecto{
-        p{
+    #projecto {
+        p {
             padding: 0 2%;
         }
-        #cardsH{
+
+        #cardsH {
             flex-flow: wrap row;
             padding: 0 2%;
-            .card{
-            width: 47%;
-          }
+
+            .card {
+                width: 49%;
+            }
         }
     }
 }
 
 @media screen and (max-width:912px) {
-    #projecto{
-    height: auto;
-    width: 100%;
-    #cardsH{
-        gap: 10px;
-        flex-direction: column;
+    #projecto {
+        height: auto;
         width: 100%;
-        padding: 20px 0;
-            .card{
-            width: 97%;
-            border: 1px solid $preto;
-            border-radius: 0 10px 0 0;
+
+        #cardsH {
+            gap: 10px;
+            flex-direction: column;
+            width: 100%;
+            padding: 20px 0;
+
+            .card {
+                width: 97%;
+                border: 1px solid $preto;
+                border-radius: 0 10px 0 0;
 
                 animation: identifier 1ms ease-in-out;
                 animation-timeline: view();
                 animation-range: 0 40%;
-          }
+            }
         }
     }
+
     @keyframes identifier {
-        from{
+        from {
             translate: -100% 0;
             opacity: 0;
         }
-        to{
+
+        to {
             opacity: 1;
             translate: 0 0;
+        }
+    }
+}
+
+@media screen and (max-width:374px) {
+    #projecto {
+        #cardsH {
+            .card {
+                height: 270px;
+            }
         }
     }
 }
