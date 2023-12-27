@@ -1033,18 +1033,27 @@
   color: rgb(87, 87, 87);
 }
 #servicos #cards .card:nth-of-type(1) #img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(87, 87, 87);
   width: 100%;
   height: 200px;
-  background: url("../imagens/istockphoto-1325074732-612x612.jpg");
+}
+#servicos #cards .card:nth-of-type(1) #img .imagem {
+  width: 50%;
+  height: 100%;
+  background: url("../imagens/JavaScript frameworks-amico.svg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   transition: 5s all;
 }
-#servicos #cards .card:nth-of-type(1) #img:hover {
-  background: url("../imagens/istockphoto-1325074732-612x612.jpg");
+#servicos #cards .card:nth-of-type(1) #img .imagem:hover {
+  transition: 5s all;
+  background: url("../imagens/JavaScript frameworks-amico.svg");
   background-repeat: no-repeat;
   background-position: center;
-  transition: 5s all;
   cursor: pointer;
 }
 #servicos #cards .card:nth-of-type(1) .spread {
@@ -1075,18 +1084,27 @@
   cursor: pointer;
 }
 #servicos #cards .card:nth-of-type(2) #img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(87, 87, 87);
   width: 100%;
   height: 200px;
-  background: url("../imagens/istockphoto-1394297245-612x612.jpg");
+}
+#servicos #cards .card:nth-of-type(2) #img .imagem {
+  width: 50%;
+  height: 100%;
+  background: url("../imagens/Online Groceries-amico.svg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   transition: 5s all;
 }
-#servicos #cards .card:nth-of-type(2) #img:hover {
-  background: url("../imagens/istockphoto-1305224036-612x612.jpg");
+#servicos #cards .card:nth-of-type(2) #img .imagem:hover {
+  transition: 5s all;
+  background: url("../imagens/Online Groceries-amico.svg");
   background-repeat: no-repeat;
   background-position: center;
-  transition: 5s all;
   cursor: pointer;
 }
 #servicos #cards .card:nth-of-type(2) #spread2 {
@@ -1117,18 +1135,27 @@
   cursor: pointer;
 }
 #servicos #cards .card:nth-of-type(3) #img {
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(87, 87, 87);
   height: 200px;
-  background: url("../imagens/istockphoto-1345532280-612x612.jpg");
+  width: 100%;
+}
+#servicos #cards .card:nth-of-type(3) #img .imagem {
+  width: 50%;
+  height: 100%;
+  background: url("../imagens/Programmer-amico.svg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   transition: 5s all;
 }
-#servicos #cards .card:nth-of-type(3) #img:hover {
-  background: url("../imagens/istockphoto-1325074732-612x612.jpg");
+#servicos #cards .card:nth-of-type(3) #img .imagem:hover {
+  transition: 5s all;
+  background: url("../imagens/Programmer-amico.svg");
   background-repeat: no-repeat;
   background-position: center;
-  transition: 5s all;
   cursor: pointer;
 }
 #servicos #cards .card:nth-of-type(3) #spread3 {
@@ -1183,7 +1210,7 @@
   justify-content: end;
   margin-right: 20px;
   position: absolute;
-  z-index: 1;
+  z-index: 1.5;
 }
 #servicos .modal-paleta.activePaleta .close #btn-close {
   cursor: pointer;
@@ -1200,10 +1227,8 @@
 }
 #servicos .modal-paleta.activePaleta .paleta-modal {
   display: flex;
-  position: absolute;
   justify-content: center;
   width: 100%;
-  z-index: -0.2;
 }
 #servicos .modal-paleta.activePaleta .paleta-modal .new-paleta {
   height: 55%;
@@ -1599,49 +1624,101 @@
     color: rgb(87, 87, 87);
   }
   #servicos #slide .cardslide .card:nth-of-type(1) #img4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(87, 87, 87);
     width: 100%;
-    height: 190px;
-    background: url("../imagens/istockphoto-1325074732-612x612.jpg");
+    height: 200px;
+  }
+  #servicos #slide .cardslide .card:nth-of-type(1) #img4 .imagem {
+    width: 60%;
+    height: 100%;
+    background: url("../imagens/JavaScript frameworks-amico.svg");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     transition: 5s all;
   }
-  #servicos #slide .cardslide .card:nth-of-type(1) #img4:hover {
-    background: url("../imagens/istockphoto-1325074732-612x612.jpg");
+  #servicos #slide .cardslide .card:nth-of-type(1) #img4 .imagem:hover {
+    transition: 5s all;
+    background: url("../imagens/JavaScript frameworks-amico.svg");
     background-repeat: no-repeat;
     background-position: center;
-    transition: 5s all;
     cursor: pointer;
   }
   #servicos #slide .cardslide .card:nth-of-type(2) #img5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(87, 87, 87);
     width: 100%;
-    height: 190px;
-    background: url("../imagens/istockphoto-1394297245-612x612.jpg");
+    height: 200px;
+  }
+  #servicos #slide .cardslide .card:nth-of-type(2) #img5 .imagem {
+    width: 60%;
+    height: 100%;
+    background: url("../imagens/Online Groceries-amico.svg");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     transition: 5s all;
   }
-  #servicos #slide .cardslide .card:nth-of-type(2) #img5:hover {
-    background: url("../imagens/istockphoto-1305224036-612x612.jpg");
+  #servicos #slide .cardslide .card:nth-of-type(2) #img5 .imagem:hover {
+    transition: 5s all;
+    background: url("../imagens/Online Groceries-amico.svg");
     background-repeat: no-repeat;
     background-position: center;
-    transition: 5s all;
     cursor: pointer;
   }
   #servicos #slide .cardslide .card:nth-of-type(3) #img6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(87, 87, 87);
+    height: 200px;
     width: 100%;
-    height: 190px;
-    background: url("../imagens/istockphoto-1345532280-612x612.jpg");
+  }
+  #servicos #slide .cardslide .card:nth-of-type(3) #img6 .imagem {
+    width: 60%;
+    height: 100%;
+    background: url("../imagens/Programmer-amico.svg");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     transition: 5s all;
   }
-  #servicos #slide .cardslide .card:nth-of-type(3) #img6:hover {
-    background: url("../imagens/istockphoto-1325074732-612x612.jpg");
+  #servicos #slide .cardslide .card:nth-of-type(3) #img6 .imagem:hover {
+    transition: 5s all;
+    background: url("../imagens/Programmer-amico.svg");
     background-repeat: no-repeat;
     background-position: center;
-    transition: 5s all;
     cursor: pointer;
+  }
+  #servicos #slide:hover .div_manual, #servicos #slide:hover .div_auto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 69%;
+    height: 2%;
+    gap: 10px;
+    left: 0%;
+  }
+  #servicos #slide:hover .div_manual .btn_manual, #servicos #slide:hover .div_auto .btn_auto {
+    margin-top: 33%;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #025;
+    border-radius: 50%;
+    transition: 1s;
+  }
+  #servicos #slide:hover .btn_manual:hover {
+    background-color: #025;
+    cursor: pointer;
+  }
+  #servicos #slide #radio1:checked ~ .div_auto .btn_auto:nth-of-type(1), #servicos #slide #radio2:checked ~ .div_auto .btn_auto:nth-of-type(2), #servicos #slide #radio3:checked ~ .div_auto .btn_auto:nth-of-type(3) {
+    background-color: #025;
   }
   #servicos #slide #radio1:checked ~ .cardslide .primeiro {
     margin-left: 1%;
@@ -1655,13 +1732,24 @@
   #servicos .modal-paleta.activePaleta .new-paleta {
     width: 95%;
   }
+  #servicos .paletas {
+    margin-top: 60px !important;
+  }
 }
-@media screen and (max-width: 741px) {
+@media screen and (max-width: 801px) {
+  #servicos #slide .div_manual, #servicos #slide .div_auto {
+    margin-top: 4.5% !important;
+  }
+}
+@media screen and (max-width: 769px) {
+  #servicos #slide .div_manual, #servicos #slide .div_auto {
+    margin-top: 6% !important;
+  }
   #servicos .modal-paleta.activePaleta .new-paleta {
     width: 95%;
   }
   #servicos .modal-paleta.activePaleta .new-paleta .subModal-Palete .precos {
-    flex-direction: column;
+    flex-direction: column !important;
   }
   #servicos .modal-paleta.activePaleta .new-paleta .subModal-Palete .precos .preco {
     width: 100% !important;
@@ -1705,6 +1793,12 @@
   }
 }
 @media screen and (max-width: 571px) {
+  #servicos .div_manual, #servicos .div_auto {
+    margin-top: 90% !important;
+  }
+  #servicos .div_manual .btn_manual, #servicos .div_auto .btn_auto {
+    margin-top: 43% !important;
+  }
   #servicos #radio1:checked ~ .cardslide .primeiro {
     margin-left: 21.5% !important;
   }
@@ -1716,6 +1810,9 @@
   #servicos #slide .cardslide .card:nth-of-type(1),
   #servicos #slide .cardslide .card:nth-of-type(3) {
     width: 523px !important;
+  }
+  #servicos #slide .div_manual, #servicos #slide .div_auto {
+    margin-top: 20% !important;
   }
   #servicos #slide #radio1:checked ~ .cardslide .primeiro {
     margin-left: 750px !important;
@@ -1814,6 +1911,16 @@
     margin-left: -1088px !important;
   }
 }
+@media screen and (max-width: 429px) {
+  #servicos #slide .div_manual, #servicos #slide .div_auto {
+    margin-top: 26% !important;
+  }
+}
+@media screen and (max-width: 415px) {
+  #servicos #slide .div_manual, #servicos #slide .div_auto {
+    margin-top: 27.5% !important;
+  }
+}
 @media screen and (max-width: 400px) {
   #servicos #slide .cardslide {
     width: 500% !important;
@@ -1846,6 +1953,9 @@
   #servicos #slide .cardslide .card:nth-of-type(2) {
     width: 380.5px !important;
   }
+  #servicos #slide .div_manual, #servicos #slide .div_auto {
+    margin-top: 30.5% !important;
+  }
   #servicos #slide #radio1:checked ~ .cardslide .primeiro {
     margin-left: 578px !important;
   }
@@ -1867,6 +1977,9 @@
   #servicos #slide .cardslide .card:nth-of-type(2) {
     width: 362.5px !important;
   }
+  #servicos #slide .div_manual, #servicos #slide .div_auto {
+    margin-top: 32.5% !important;
+  }
   #servicos #slide #radio1:checked ~ .cardslide .primeiro {
     margin-left: 555px !important;
   }
@@ -1887,6 +2000,9 @@
   }
   #servicos #slide .cardslide .card:nth-of-type(2) {
     width: 342.5px !important;
+  }
+  #servicos #slide .div_manual, #servicos #slide .div_auto {
+    margin-top: 35.5% !important;
   }
   #servicos #slide #radio1:checked ~ .cardslide .primeiro {
     margin-left: 521px !important;
@@ -1924,7 +2040,7 @@
     width: 500% !important;
   }
   #servicos #slide .cardslide .card {
-    height: 95%;
+    height: 100% !important;
   }
   #servicos #slide .cardslide .card:nth-of-type(1),
   #servicos #slide .cardslide .card:nth-of-type(3) {
@@ -1932,6 +2048,9 @@
   }
   #servicos #slide .cardslide .card:nth-of-type(2) {
     width: 308px !important;
+  }
+  #servicos #slide .div_manual, #servicos #slide .div_auto {
+    margin-top: 41.5% !important;
   }
   #servicos #slide #radio1:checked ~ .cardslide .primeiro {
     margin-left: 475px !important;
@@ -2077,9 +2196,10 @@
 #projecto #cardsH .card:nth-of-type(3) #foto {
   width: 40%;
   height: 100%;
-  background: url("../imagens/cardsHorizontal/pngegg (2).png");
+  background: url("../imagens/cardsHorizontal/_0f21eef2-dc1d-48a0-b743-7c994b56292b.jfif");
   background-color: #fff;
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 #projecto #cardsH .card:nth-of-type(3) #descrição {
@@ -2110,7 +2230,7 @@
 #projecto #cardsH .card:nth-of-type(4) #foto {
   width: 40%;
   height: 100%;
-  background: url("../imagens/cardsHorizontal/pedro.png");
+  background: url("../imagens/cardsHorizontal/541d3e00-015b-4fdb-99e7-4bc11be56dfe.png");
   background-repeat: no-repeat;
   background-position: center;
   background-position-x: -35px;
@@ -2363,7 +2483,7 @@
     padding: 0 2%;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 784px) {
   #footer {
     height: auto;
   }
@@ -2371,6 +2491,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
   }
   #footer #linksRapidos #logoFooter {
     display: block;

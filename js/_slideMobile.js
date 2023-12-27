@@ -1,7 +1,7 @@
 'use strict';
 
 //?    Aqui começa a formatação do slide Mobile
-var radio=document.querySelector('.manual-btn');
+var radio=document.querySelector('.btn_manual');
 document.getElementById('radio1').checked=true;
 var cont=1;
  setInterval(()=>{

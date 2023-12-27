@@ -105,13 +105,14 @@
             }
         }
     }
-    @media screen and (max-width:450px){
+    @media screen and (max-width:784px){
         #footer{
             height: auto; 
             #linksRapidos {
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                flex-direction: column;
                 #logoFooter{
                     display: block;
                     text-align: center;

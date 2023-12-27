@@ -129,9 +129,11 @@
             &:nth-of-type(3) #foto {
                 width: 40%;
                 height: 100%;
-                background: url("../imagens/cardsHorizontal/pngegg\ \(2\).png");
+                background: url("../imagens/cardsHorizontal/_0f21eef2-dc1d-48a0-b743-7c994b56292b.jfif");
                 background-color: $branco;
                 background-repeat: no-repeat;
+                background-position: center;
+                // background-position-x:-50px ;
                 background-size: cover;
             }
 
@@ -168,7 +170,7 @@
             &:nth-of-type(4) #foto {
                 width: 40%;
                 height: 100%;
-                background: url("../imagens/cardsHorizontal/pedro.png");
+                background: url("../imagens/cardsHorizontal/541d3e00-015b-4fdb-99e7-4bc11be56dfe.png");
                 background-repeat: no-repeat;
                 background-position: center;
                 background-position-x: -35px;

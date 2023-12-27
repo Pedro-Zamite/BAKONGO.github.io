@@ -328,20 +328,29 @@
         }
 
         .card:nth-of-type(1) #img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $cinza;
             width: 100%;
             height: 200px;
-            background: url("../imagens/istockphoto-1325074732-612x612.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            transition: 5s all;
-
-            &:hover {
-                background: url("../imagens/istockphoto-1325074732-612x612.jpg");
-                background-repeat: no-repeat;
+            .imagem{
+                width: 50%;
+                height: 100%;
+                background: url("../imagens/JavaScript frameworks-amico.svg");
                 background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
                 transition: 5s all;
-                cursor: pointer;
-            }
+                
+                &:hover {
+                    transition: 5s all;
+                    background: url("../imagens/JavaScript frameworks-amico.svg");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    cursor: pointer;
+                }
+             }
 
         }
 
@@ -375,20 +384,29 @@
         }
 
         .card:nth-of-type(2) #img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $cinza;
             width: 100%;
             height: 200px;
-            background: url("../imagens/istockphoto-1394297245-612x612.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            transition: 5s all;
-
-            &:hover {
-                background: url("../imagens/istockphoto-1305224036-612x612.jpg");
-                background-repeat: no-repeat;
+            .imagem{
+                width: 50%;
+                height: 100%;
+                background: url("../imagens/Online Groceries-amico.svg");
                 background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
                 transition: 5s all;
-                cursor: pointer;
-            }
+                
+                &:hover {
+                    transition: 5s all;
+                    background: url("../imagens/Online Groceries-amico.svg");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    cursor: pointer;
+                }
+             }
 
         }
 
@@ -422,20 +440,29 @@
         }
 
         .card:nth-of-type(3) #img {
-            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $cinza;
             height: 200px;
-            background: url("../imagens/istockphoto-1345532280-612x612.jpg");
+            width: 100%;
+         .imagem{
+            width: 50%;
+            height: 100%;
+            background: url("../imagens/Programmer-amico.svg");
+            background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
             transition: 5s all;
-
+            
             &:hover {
-                background: url("../imagens/istockphoto-1325074732-612x612.jpg");
+                transition: 5s all;
+                background: url("../imagens/Programmer-amico.svg");
                 background-repeat: no-repeat;
                 background-position: center;
-                transition: 5s all;
                 cursor: pointer;
             }
+         }
 
         }
 
@@ -498,7 +525,7 @@
             justify-content: end;
             margin-right: 20px;
             position: absolute;
-            z-index: 1;
+            z-index: 1.5;
 
             #btn-close {
                 cursor: pointer;
@@ -519,11 +546,8 @@
 
         .paleta-modal {
             display: flex;
-            position: absolute;
             justify-content: center;
             width: 100%;
-            z-index: -0.2;
-
             .new-paleta {
                 height: 55%;
                 width: 90%;
@@ -887,19 +911,6 @@
 
     }
 }
-
-// @media screen and (max-width:1100px) {
-//     #servicos {
-//         #cards {
-//             .card {
-//                 width: 329.5px;
-//                 height: 100%;
-//                 background-color: $cinza-claro;
-//             }
-//         }
-
-//     }
-// }
 @media screen and (max-width:1050px) {
     #servicos {
         p {
@@ -960,7 +971,6 @@
 @media screen and (max-width:917.5px) {
     #servicos {
         overflow: hidden;
-
         #cards {
             display: none;
         }
@@ -972,7 +982,6 @@
             position: relative;
             height: 360px;
             width: 150%;
-
             input {
                 display: none;
             }
@@ -1033,60 +1042,115 @@
                 }
 
                 .card:nth-of-type(1) #img4 {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: $cinza;
                     width: 100%;
-                    height: 190px;
-                    background: url("../imagens/istockphoto-1325074732-612x612.jpg");
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    transition: 5s all;
-
-                    &:hover {
-                        background: url("../imagens/istockphoto-1325074732-612x612.jpg");
-                        background-repeat: no-repeat;
+                    height: 200px;
+                    .imagem{
+                        width: 60%;
+                        height: 100%;
+                        background: url("../imagens/JavaScript frameworks-amico.svg");
                         background-position: center;
-                        transition: 5s all;
-                        cursor: pointer;
-                    }
-
-                }
-
-                .card:nth-of-type(2) #img5 {
-                    width: 100%;
-                    height: 190px;
-                    background: url("../imagens/istockphoto-1394297245-612x612.jpg");
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    transition: 5s all;
-
-                    &:hover {
-                        background: url("../imagens/istockphoto-1305224036-612x612.jpg");
                         background-repeat: no-repeat;
-                        background-position: center;
+                        background-size: cover;
                         transition: 5s all;
-                        cursor: pointer;
-                    }
-
+                        
+                        &:hover {
+                            transition: 5s all;
+                            background: url("../imagens/JavaScript frameworks-amico.svg");
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            cursor: pointer;
+                        }
+                     }
+        
                 }
-
-                .card:nth-of-type(3) #img6 {
-                    width: 100%;
-                    height: 190px;
-                    background: url("../imagens/istockphoto-1345532280-612x612.jpg");
-                    background-repeat: no-repeat;
-                    background-size: cover;
+        .card:nth-of-type(2) #img5 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $cinza;
+            width: 100%;
+            height: 200px;
+            .imagem{
+                width: 60%;
+                height: 100%;
+                background: url("../imagens/Online Groceries-amico.svg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                transition: 5s all;
+                
+                &:hover {
                     transition: 5s all;
-
-                    &:hover {
-                        background: url("../imagens/istockphoto-1325074732-612x612.jpg");
-                        background-repeat: no-repeat;
-                        background-position: center;
-                        transition: 5s all;
-                        cursor: pointer;
-                    }
-
+                    background: url("../imagens/Online Groceries-amico.svg");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    cursor: pointer;
                 }
+             }
+
+        }
+
+        .card:nth-of-type(3) #img6 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $cinza;
+            height: 200px;
+            width: 100%;
+         .imagem{
+            width: 60%;
+            height: 100%;
+            background: url("../imagens/Programmer-amico.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: 5s all;
+            
+            &:hover {
+                transition: 5s all;
+                background: url("../imagens/Programmer-amico.svg");
+                background-repeat: no-repeat;
+                background-position: center;
+                cursor: pointer;
+            }
+         }
+
+        }
             }
 
+              &:hover{
+                  .div_manual, .div_auto{
+                       display: flex;
+                       align-items: center;
+                       justify-content: center;
+                       position: absolute;
+                       width: 69%;
+                       height: 2%;
+                       gap:10px;
+                       left:0%;
+                   }
+               .div_manual .btn_manual, .div_auto .btn_auto{
+                   margin-top: 33%;
+                   width: 30px;
+                   height: 30px;
+                   border: 1px solid $azuel-escuro;
+                   border-radius: 50%;
+                   transition: 1s;
+                   
+               }
+               .btn_manual:hover{
+                   background-color: $azuel-escuro;
+                   cursor: pointer;
+               }
+              } 
+
+            #radio1:checked~.div_auto .btn_auto:nth-of-type(1), #radio2:checked~.div_auto .btn_auto:nth-of-type(2),#radio3:checked~.div_auto .btn_auto:nth-of-type(3){
+                background-color: $azuel-escuro;
+            }
             #radio1:checked~.cardslide .primeiro {
                 margin-left: 1%;
             }
@@ -1106,19 +1170,35 @@
             }
         }
 
+        .paletas {
+            margin-top: 60px !important;
+        }
     }
 }
 
-@media screen and (max-width:741px) {
+@media screen and (max-width:801px) {
     #servicos {
+        #slide{
+                .div_manual, .div_auto{
+                    margin-top: 4.5% !important;
+                }
+        }
+    }
+    
+}
+@media screen and (max-width:769px) {
+    #servicos {
+        #slide{
+            .div_manual, .div_auto{
+                margin-top: 6% !important;
+            }
+    }
         .modal-paleta.activePaleta {
             .new-paleta {
                 width: 95%;
-
                 .subModal-Palete {
                     .precos {
-                        flex-direction: column;
-
+                        flex-direction: column !important;
                         .preco {
                             width: 100% !important;
                             margin-bottom: 30px;
@@ -1145,6 +1225,7 @@
                     width: 400px;
                 }
             }
+            
         }
 
         #radio1:checked~.cardslide .primeiro {
@@ -1189,6 +1270,13 @@
 
 @media screen and (max-width:571px) {
     #servicos {
+        .div_manual, .div_auto{
+                margin-top: 90% !important;
+            }
+            .div_manual .btn_manual, .div_auto .btn_auto{
+                margin-top: 43% !important;
+    
+            }
         #radio1:checked~.cardslide .primeiro {
             margin-left: 21.5% !important;
         }
@@ -1206,6 +1294,9 @@
                 .card:nth-of-type(3) {
                     width: 523px !important;
                 }
+            }
+            .div_manual, .div_auto{
+                margin-top: 20% !important;
             }
 
             #radio1:checked~.cardslide .primeiro {
@@ -1253,6 +1344,15 @@
         }
     }
 }
+//! @media screen and (max-width:769px) {
+//     #servicos {
+//         #slide{
+//             // .div_manual, .div_auto{
+//             //     margin-top: 20% !important;
+//             // }
+//     }
+//     }
+// }
 
 @media screen and (max-width:498px) {
     #servicos {
@@ -1349,6 +1449,24 @@
         }
     }
 }
+@media screen and (max-width:429px) {
+    #servicos {
+        #slide{
+            .div_manual, .div_auto{
+                margin-top: 26% !important;
+            }
+    }
+    }
+}
+@media screen and (max-width:415px) {
+    #servicos {
+        #slide{
+            .div_manual, .div_auto{
+                margin-top: 27.5% !important;
+            }
+    }
+    }
+}
 
 @media screen and (max-width:400px) {
     #servicos {
@@ -1397,6 +1515,9 @@
                 }
             }
 
+            .div_manual, .div_auto{
+                margin-top: 30.5% !important;
+            }
             #radio1:checked~.cardslide .primeiro {
                 margin-left: 578px !important;
             }
@@ -1428,6 +1549,9 @@
                 }
             }
 
+            .div_manual, .div_auto{
+                margin-top: 32.5% !important;
+            }
             #radio1:checked~.cardslide .primeiro {
                 margin-left: 555px !important;
             }
@@ -1459,6 +1583,9 @@
                 }
             }
 
+            .div_manual, .div_auto{
+                margin-top: 35.5% !important;
+            }
             #radio1:checked~.cardslide .primeiro {
                 margin-left: 521px !important;
             }
@@ -1513,7 +1640,7 @@
                 width: 500% !important;
 
                 .card {
-                    height: 95%;
+                    height: 100% !important;
                 }
 
                 .card:nth-of-type(1),
@@ -1524,6 +1651,9 @@
                 .card:nth-of-type(2) {
                     width: 308px !important;
                 }
+            }
+            .div_manual, .div_auto{
+                margin-top: 41.5% !important;
             }
 
             #radio1:checked~.cardslide .primeiro {
