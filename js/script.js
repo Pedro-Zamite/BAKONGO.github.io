@@ -1,7 +1,6 @@
 import {btn_close, btn_contratar, btn_contratar2, btn_contratar3, contato, menu_itens, btn_paleta, modal_Paleta, hamburgue, menu, spread, spread2, spread3, spread4, spread5, spread6, modal, modal2, modal3, EuQuero, EuQuero2, EuQuero3, body} from "./_variaveis.js";
 import {radio} from "./_slideMobile.js";
 
-console.log(btn_contratar)
 //! Inicio da Formatação do slide header
 var radial=document.querySelector('.manual-btn');
 document.getElementById('radio4').checked=true;

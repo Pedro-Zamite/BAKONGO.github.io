@@ -89,8 +89,26 @@
             text-align: center;
             border-top: 2px solid $branco ;
         }
-    } 
 
+        .topo{
+            background-color: $cinza;
+            border: 1px solid $preto;
+            border-radius: 50%;
+            position: fixed;
+            height: 50px;
+            padding: 5px;
+            bottom: 20px;
+            right: -50px;
+            width: 50px;
+            a{
+                width: 100%;
+            }
+        }
+         .showTopo{
+            right: 50px !important;
+        }
+        
+    } 
     @media screen and (max-width:1500px) {
         #footer{
             #linksRapidos {

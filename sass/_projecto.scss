@@ -54,8 +54,9 @@
             &:nth-of-type(1) #foto {
                 width: 40%;
                 height: 100%;
-                background: url("../imagens/cardsHorizontal/MONITOR\ PORTATIL\ ASUS\ LED\ 15.6.webp");
+                background: url("../imagens/cardsHorizontal/_0f21eef2-dc1d-48a0-b743-7c994b56292b.jfif");
                 background-repeat: no-repeat;
+                background-position: center;
                 background-size: cover;
             }
 
@@ -89,11 +90,12 @@
             }
 
             &:nth-of-type(2) #foto {
-                width: 40%;
+                width: 35%;
                 height: 100%;
-                background: url("../imagens/cardsHorizontal/PC\ ITX\ GAMER\ ARENA\ SETUP\ AMD\ ATHLON\ 3000G\ RX\ 550\ 4GB\ 8GB\ RAM\ SSD\ 240GB.webp");
+                background: url("../imagens/cardsHorizontal/JovemLoira.jfif");
                 background-position-x: -40px;
                 background-repeat: no-repeat;
+                background-position: center;
                 background-size: cover;
             }
 
@@ -129,11 +131,10 @@
             &:nth-of-type(3) #foto {
                 width: 40%;
                 height: 100%;
-                background: url("../imagens/cardsHorizontal/_0f21eef2-dc1d-48a0-b743-7c994b56292b.jfif");
+                background: url("../imagens/cardsHorizontal/JovenMorena.jfif");
                 background-color: $branco;
                 background-repeat: no-repeat;
                 background-position: center;
-                // background-position-x:-50px ;
                 background-size: cover;
             }
 
@@ -168,12 +169,11 @@
             }
 
             &:nth-of-type(4) #foto {
-                width: 40%;
+                width: 35%;
                 height: 100%;
-                background: url("../imagens/cardsHorizontal/541d3e00-015b-4fdb-99e7-4bc11be56dfe.png");
+                background: url("../imagens/cardsHorizontal/senhora.jfif");
                 background-repeat: no-repeat;
                 background-position: center;
-                background-position-x: -35px;
                 background-size: cover;
             }
 
@@ -269,6 +269,13 @@
                 animation: identifier 1ms ease-in-out;
                 animation-timeline: view();
                 animation-range: 0 40%;
+
+                &:nth-of-type(2) #foto {
+                    width: 40% !important;
+                }
+                &:nth-of-type(4) #foto {
+                    width: 40% !important;
+                }
             }
         }
     }

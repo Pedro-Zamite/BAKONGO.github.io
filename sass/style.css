@@ -1,10 +1,16 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;1,100&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  scroll-padding-top: 5em;
+  scroll-padding-top: 4.7em;
+  font-family: poppins;
+}
+
+body {
+  overflow-x: hidden !important;
 }
 
 #logo h1 {
@@ -21,12 +27,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
   z-index: 1;
   width: 100%;
   height: 80px;
   padding: 0 10%;
-  position: fixed;
-  background-color: #060606;
+  background-color: rgba(6, 6, 6, 0.9607843137);
 }
 #navbar #hamburgue {
   display: none;
@@ -122,7 +128,7 @@
     transform: rotate(37deg) translateY(-15px) translateX(-10px);
   }
   #navbar #menu {
-    background-color: rgba(0, 0, 0, 0.6117647059);
+    background-color: rgba(0, 0, 0, 0.7098039216);
     transition: 0.5s all;
     position: absolute;
     margin-top: 20px;
@@ -326,7 +332,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.6117647059);
+  background-color: rgba(0, 0, 0, 0.7098039216);
   position: absolute;
   padding: 0 10%;
   height: 100%;
@@ -492,7 +498,7 @@
   height: 100%;
   cursor: pointer;
   background-position-x: 300px;
-  background-color: rgba(0, 0, 0, 0.6117647059);
+  background-color: rgba(0, 0, 0, 0.7098039216);
   transition: 1s;
 }
 #sobre #sobre-decrition #Img-sobre:hover #sobreOpac div {
@@ -788,7 +794,7 @@
   position: fixed;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.6117647059);
+  background-color: rgba(0, 0, 0, 0.7098039216);
   padding: 20px 0 20px 0;
   cursor: pointer;
   height: 100vh;
@@ -861,7 +867,7 @@
   position: fixed;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.6117647059);
+  background-color: rgba(0, 0, 0, 0.7098039216);
   padding: 20px 0 20px 0;
   cursor: pointer;
   height: 100vh;
@@ -934,7 +940,7 @@
   position: fixed;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.6117647059);
+  background-color: rgba(0, 0, 0, 0.7098039216);
   padding: 20px 0 20px 0;
   cursor: pointer;
   height: 100vh;
@@ -1195,7 +1201,7 @@
   display: flex;
   position: fixed;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.6117647059);
+  background-color: rgba(0, 0, 0, 0.7098039216);
   padding: 20px 0 20px 0;
   cursor: pointer;
   height: 99.9vh;
@@ -1313,7 +1319,7 @@
 }
 #servicos .paletas .paleta-precario .btn-paleta {
   background-color: #083b6d;
-  border: 1px solid rgba(0, 0, 0, 0.6117647059);
+  border: 1px solid rgba(0, 0, 0, 0.7098039216);
   border-radius: 5px;
   transition: 0.5s;
   cursor: pointer;
@@ -1360,6 +1366,7 @@
     width: 100%;
     height: 200px;
     background: url("../imagens/istockphoto-1325074732-612x612.jpg");
+    background-color: rgb(87, 87, 87);
     background-repeat: no-repeat;
     background-size: cover;
     transition: 5s all;
@@ -1402,6 +1409,7 @@
     width: 100%;
     height: 200px;
     background: url("../imagens/istockphoto-1394297245-612x612.jpg");
+    background-color: rgb(87, 87, 87);
     background-repeat: no-repeat;
     background-size: cover;
     transition: 5s all;
@@ -1444,6 +1452,7 @@
     width: 100%;
     height: 200px;
     background: url("../imagens/istockphoto-1345532280-612x612.jpg");
+    background-color: rgb(87, 87, 87);
     background-repeat: no-repeat;
     background-size: cover;
     transition: 5s all;
@@ -1483,7 +1492,7 @@
     cursor: pointer;
   }
   #servicos .paletas {
-    margin-top: 40px;
+    margin-top: 50px !important;
   }
 }
 @media screen and (max-width: 1249.9px) and (min-width: 918px) {
@@ -1695,28 +1704,6 @@
     background-position: center;
     cursor: pointer;
   }
-  #servicos #slide:hover .div_manual, #servicos #slide:hover .div_auto {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 69%;
-    height: 2%;
-    gap: 10px;
-    left: 0%;
-  }
-  #servicos #slide:hover .div_manual .btn_manual, #servicos #slide:hover .div_auto .btn_auto {
-    margin-top: 33%;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #025;
-    border-radius: 50%;
-    transition: 1s;
-  }
-  #servicos #slide:hover .btn_manual:hover {
-    background-color: #025;
-    cursor: pointer;
-  }
   #servicos #slide #radio1:checked ~ .div_auto .btn_auto:nth-of-type(1), #servicos #slide #radio2:checked ~ .div_auto .btn_auto:nth-of-type(2), #servicos #slide #radio3:checked ~ .div_auto .btn_auto:nth-of-type(3) {
     background-color: #025;
   }
@@ -1736,15 +1723,7 @@
     margin-top: 60px !important;
   }
 }
-@media screen and (max-width: 801px) {
-  #servicos #slide .div_manual, #servicos #slide .div_auto {
-    margin-top: 4.5% !important;
-  }
-}
 @media screen and (max-width: 769px) {
-  #servicos #slide .div_manual, #servicos #slide .div_auto {
-    margin-top: 6% !important;
-  }
   #servicos .modal-paleta.activePaleta .new-paleta {
     width: 95%;
   }
@@ -1793,12 +1772,6 @@
   }
 }
 @media screen and (max-width: 571px) {
-  #servicos .div_manual, #servicos .div_auto {
-    margin-top: 90% !important;
-  }
-  #servicos .div_manual .btn_manual, #servicos .div_auto .btn_auto {
-    margin-top: 43% !important;
-  }
   #servicos #radio1:checked ~ .cardslide .primeiro {
     margin-left: 21.5% !important;
   }
@@ -1810,9 +1783,6 @@
   #servicos #slide .cardslide .card:nth-of-type(1),
   #servicos #slide .cardslide .card:nth-of-type(3) {
     width: 523px !important;
-  }
-  #servicos #slide .div_manual, #servicos #slide .div_auto {
-    margin-top: 20% !important;
   }
   #servicos #slide #radio1:checked ~ .cardslide .primeiro {
     margin-left: 750px !important;
@@ -1911,16 +1881,6 @@
     margin-left: -1088px !important;
   }
 }
-@media screen and (max-width: 429px) {
-  #servicos #slide .div_manual, #servicos #slide .div_auto {
-    margin-top: 26% !important;
-  }
-}
-@media screen and (max-width: 415px) {
-  #servicos #slide .div_manual, #servicos #slide .div_auto {
-    margin-top: 27.5% !important;
-  }
-}
 @media screen and (max-width: 400px) {
   #servicos #slide .cardslide {
     width: 500% !important;
@@ -1953,9 +1913,6 @@
   #servicos #slide .cardslide .card:nth-of-type(2) {
     width: 380.5px !important;
   }
-  #servicos #slide .div_manual, #servicos #slide .div_auto {
-    margin-top: 30.5% !important;
-  }
   #servicos #slide #radio1:checked ~ .cardslide .primeiro {
     margin-left: 578px !important;
   }
@@ -1977,9 +1934,6 @@
   #servicos #slide .cardslide .card:nth-of-type(2) {
     width: 362.5px !important;
   }
-  #servicos #slide .div_manual, #servicos #slide .div_auto {
-    margin-top: 32.5% !important;
-  }
   #servicos #slide #radio1:checked ~ .cardslide .primeiro {
     margin-left: 555px !important;
   }
@@ -2000,9 +1954,6 @@
   }
   #servicos #slide .cardslide .card:nth-of-type(2) {
     width: 342.5px !important;
-  }
-  #servicos #slide .div_manual, #servicos #slide .div_auto {
-    margin-top: 35.5% !important;
   }
   #servicos #slide #radio1:checked ~ .cardslide .primeiro {
     margin-left: 521px !important;
@@ -2048,9 +1999,6 @@
   }
   #servicos #slide .cardslide .card:nth-of-type(2) {
     width: 308px !important;
-  }
-  #servicos #slide .div_manual, #servicos #slide .div_auto {
-    margin-top: 41.5% !important;
   }
   #servicos #slide #radio1:checked ~ .cardslide .primeiro {
     margin-left: 475px !important;
@@ -2131,8 +2079,9 @@
 #projecto #cardsH .card:nth-of-type(1) #foto {
   width: 40%;
   height: 100%;
-  background: url("../imagens/cardsHorizontal/MONITOR PORTATIL ASUS LED 15.6.webp");
+  background: url("../imagens/cardsHorizontal/_0f21eef2-dc1d-48a0-b743-7c994b56292b.jfif");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 #projecto #cardsH .card:nth-of-type(1) #descrição {
@@ -2161,11 +2110,12 @@
   line-height: 2;
 }
 #projecto #cardsH .card:nth-of-type(2) #foto {
-  width: 40%;
+  width: 35%;
   height: 100%;
-  background: url("../imagens/cardsHorizontal/PC ITX GAMER ARENA SETUP AMD ATHLON 3000G RX 550 4GB 8GB RAM SSD 240GB.webp");
+  background: url("../imagens/cardsHorizontal/JovemLoira.jfif");
   background-position-x: -40px;
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 #projecto #cardsH .card:nth-of-type(2) #descrição {
@@ -2196,7 +2146,7 @@
 #projecto #cardsH .card:nth-of-type(3) #foto {
   width: 40%;
   height: 100%;
-  background: url("../imagens/cardsHorizontal/_0f21eef2-dc1d-48a0-b743-7c994b56292b.jfif");
+  background: url("../imagens/cardsHorizontal/JovenMorena.jfif");
   background-color: #fff;
   background-repeat: no-repeat;
   background-position: center;
@@ -2228,12 +2178,11 @@
   line-height: 2;
 }
 #projecto #cardsH .card:nth-of-type(4) #foto {
-  width: 40%;
+  width: 35%;
   height: 100%;
-  background: url("../imagens/cardsHorizontal/541d3e00-015b-4fdb-99e7-4bc11be56dfe.png");
+  background: url("../imagens/cardsHorizontal/senhora.jfif");
   background-repeat: no-repeat;
   background-position: center;
-  background-position-x: -35px;
   background-size: cover;
 }
 #projecto #cardsH .card:nth-of-type(4) #descrição {
@@ -2311,6 +2260,12 @@
     animation: identifier 1ms ease-in-out;
     animation-timeline: view();
     animation-range: 0 40%;
+  }
+  #projecto #cardsH .card:nth-of-type(2) #foto {
+    width: 40% !important;
+  }
+  #projecto #cardsH .card:nth-of-type(4) #foto {
+    width: 40% !important;
   }
   @keyframes identifier {
     from {
@@ -2471,6 +2426,23 @@
   margin-top: 20px;
   text-align: center;
   border-top: 2px solid #fff;
+}
+#footer .topo {
+  background-color: rgb(87, 87, 87);
+  border: 1px solid #111111;
+  border-radius: 50%;
+  position: fixed;
+  height: 50px;
+  padding: 5px;
+  bottom: 20px;
+  right: -50px;
+  width: 50px;
+}
+#footer .topo a {
+  width: 100%;
+}
+#footer .showTopo {
+  right: 50px !important;
 }
 
 @media screen and (max-width: 1500px) {
